@@ -57,9 +57,11 @@ const ContactForm = ({
 			hasError = true;
 		}
 
-		if (!form.telegram.trim() && !isTelegramValid(form.telegram.trim())) {
-			newErrors.telegram = t("errors.telegram");
-			hasError = true;
+		if (showTelegram) {
+			if (!form.telegram.trim() || !isTelegramValid(form.telegram.trim())) {
+				newErrors.telegram = t("errors.telegram");
+				hasError = true;
+			}
 		}
 
 		setErrors(newErrors);
@@ -113,7 +115,9 @@ const ContactForm = ({
 		<div className="w-full max-w-md mx-auto px-4">
 			{sent ? (
 				<div className="text-center space-y-2">
-					<h3 className="text-lg font-medium text-green-700">{t("success.title")}</h3>
+					<h3 className="text-lg font-medium text-green-700">
+						{t("success.title")}
+					</h3>
 					<p className="text-sm text-gray-600">{t("success.description")}</p>
 				</div>
 			) : (
@@ -135,27 +139,6 @@ const ContactForm = ({
 						{errors.name && (
 							<p className="font-CodecPro300 text-sm text-[#f04438] mt-1">
 								{errors.name}
-							</p>
-						)}
-					</div>
-
-					{/* Phone */}
-					<div>
-						<label className="font-CodecPro300 text-sm mb-1 text-gray-80">
-							{t("phone")}
-						</label>
-						<PhoneInput
-							defaultCountry="UA"
-							value={form.phone}
-							onChange={(value) => handleChange("phone", value || "")}
-							placeholder="+380 93 955 01 25"
-							className={`bg-white w-full text-gray-100 font-CodecPro300 text-base outline-none ${
-								errors.phone ? errorStyles : validBorder
-							}`}
-						/>
-						{errors.phone && (
-							<p className="font-CodecPro300 text-sm text-[#f04438] mt-1">
-								{errors.phone}
 							</p>
 						)}
 					</div>
@@ -182,6 +165,27 @@ const ContactForm = ({
 							)}
 						</div>
 					)}
+
+					{/* Phone */}
+					<div>
+						<label className="font-CodecPro300 text-sm mb-1 text-gray-80">
+							{t("phone")}
+						</label>
+						<PhoneInput
+							defaultCountry="UA"
+							value={form.phone}
+							onChange={(value) => handleChange("phone", value || "")}
+							placeholder="+380 93 955 01 25"
+							className={`bg-white w-full text-gray-100 font-CodecPro300 text-base outline-none ${
+								errors.phone ? errorStyles : validBorder
+							}`}
+						/>
+						{errors.phone && (
+							<p className="font-CodecPro300 text-sm text-[#f04438] mt-1">
+								{errors.phone}
+							</p>
+						)}
+					</div>
 
 					{/* Submit */}
 					<button
