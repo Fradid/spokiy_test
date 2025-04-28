@@ -1,0 +1,185 @@
+{
+	"home": {
+		"metatags": {
+			"title": "Buy a cottage | Cottages for sale in the Carpathians from Lehit",
+			"description": "Buy a cottage in the Lehit cottage town in the heart of the Carpathians. We offer a large selection of eco cottages for sale in Skhidnytsia, Lviv region at a bargain price."
+		},
+		"main": {
+			"title": "Lehit - a recreation complex in the Carpathians",
+  		"description": "Immerse yourself in a world where the gentle breeze of the Carpathians and the depth of primordial forests softly embrace you, offering peace and harmony. Our recreation complex will leave unforgettable memories in the heart of every guest."
+		},
+		"about": {
+			"title": "About the recreation complex",
+			"description": "A space of boundless recovery for everyone",
+			"text": "Lehit is a recreation complex designed for guests with diverse preferences. Here, both lovers of active leisure and those who seek peace and solitude will find their ideal vacation here. We have created separate zones for guests with various needs so that you can enjoy harmony with nature at your own pace."
+		},
+		"location": {
+			"title": "Location",
+			"text": "Lviv Region, Skhidnytsia Resort, Novi Kropyvnyk Village, on the banks of the Striy River"
+		},
+		"area": {
+			"title": "Total area",
+			"text": "3,35 hectares"
+		}
+	},
+	"investment": {
+		"metatags": {
+			"title": "Investment property in the Carpathians | Investing in a cottage from Lehit",
+			"description": "Profitable investment in a cottage near Skhidnytsia with a payback of up to 9 years and stable passive income. Reliable investment in real estate in the Carpathians together with Lehit."
+		},
+		"main": {
+			"title": "Investments in a recreation complex in the Carpathians",
+  		"description": "Investing your cash assets in real estate in the Carpathians will provide you with monthly passive income and a place to relax without unnecessary worries."
+		}
+	},
+	"navbar": {
+		"cottages": "Cottages",
+		"investment": "Investments",
+		"presentation": "Presentation",
+		"contacts": "Contact Us"
+	},
+	"cottages": {
+		"podyh": "Cottage Podyh",
+		"nebo": "Cottage Nebo",
+		"solar3-1": "Cottage Solar 1",
+		"solar3-2": "Cottage Solar 2",
+		"svitanok": "Cottage Svitanok",
+		"dyvo": "Cottage Dyvo",
+		"showAll": "Show all"
+	},
+	"btnLabel": {
+		"leaveRequest": "Become a part of Lehít",
+		"viewGenplan": "View the General Plan",
+		"openGenplan": "Open the General Plan",
+		"ourLocation": "Our location",
+		"formBtn": "Leave a request",
+		"viewAll": "View all",
+		"download": "Download PDF presentation",
+		"calculate": "Calculate the cost"
+	},
+	"footer": {
+		"title": "Welcome to the Lehit cottage complex",
+		"description": "Please fill out the form and our manager can contact you and discuss the details",
+		"logoText": "Lehit - a space of boundless recovery for everyone",
+		"allRights": "© 2025 \"ЛЕГІТ.WELLNESS VILLAGE\". All rights reserved.",
+		"address": "Lviv Region, Skhidnytsia Resort, Novi Kropyvnyk Village",
+		"salesAddress": "37a S. Petliury St., Lviv, Ukraine",
+		"labels": {
+			"menu": "Menu",
+			"cottages": "Cottages",
+			"contacts": "Contact Us"
+		},
+		"contactsLabels": {
+			"telephone": "Telephone",
+			"email": "Email",
+			"route": "Lay a route",
+			"sales": "Sales Department",
+			"socialMedia": "Social Media"
+		}
+	},
+	"form": {
+		"name": "Your name",
+		"phone": "Phone number",
+		"telegram": "Your nickname in Telegram",
+		"placeholder": "Elena Gritsyuk",
+		"errors": {
+			"name": "Invalid name entered.",
+			"telegram": "Invalid Telegram nickname.",
+			"phone": "Invalid number entered.",
+			"data": "Error sending data",
+			"smthingWrong": "Something went wrong. Please try again later."
+		}
+	},
+	"sections": {
+		"cottages": {
+			"title": "Comfortable cottages in the Carpathians",
+			"description": "Each cottage type is designed to meet unique needs and accommodate different numbers of guests. Neutral colors, soft lighting, and panoramic windows with breathtaking views create an atmosphere of complete relaxation.",
+			"mLabel": "m",
+			"forSale": "Available for sale",
+			"cost": "Cost of cottage",
+			"area": "Area"
+		},
+		"payback": {
+			"title": "The investment potential of our complex",
+			"intro": "A vacation complex is not only a great option for relaxation but also a profitable investment opportunity. Real estate in the Carpathians will always be a reliable financial asset for you and your family. Additionally, investors have the opportunity to stay in the cottage for 21 days per year.",
+			"potential": "LEHIT Wellness Village's investment potential is a dream come true for every investor because it is a reliable financial asset with a stable income.",
+			"sections": {
+				"first": "Passive Income of 11% Annually",
+				"second": "Investment Payback within 9 Years",
+				"third": "Up to $2,000 Monthly Profit",
+				"fourth": "Capitalization Growth of 20% during Construction"
+			}
+		},
+		"infrastructure": {
+			"title": "The infrastructure of the Lehit recreation complex"
+		},
+		"advantages": {
+			"title": "Advantages of Buying Lehit Cottages"
+		},
+		"whyYouNeed": {
+			"title": "Why Should You Buy a Cottage in the Carpathians",
+			"textTitle": "A space of boundless recovery for everyone",
+			"firstText": "Skhidnytsia is a resort village in the Lviv region that is captivated by its natural beauty. Nestled among picturesque forests in the valley of the Stryi River, this mountain retreat is renowned for its mineral waters, which offer numerous health benefits. Nearby, you’ll find breathtaking natural landscapes such as Skole Beskids, Krutohir, Tsyukhiv Verkh, Bukovytsia, and the Sopit Waterfall, along with numerous hiking trails perfect for leisurely walks and outdoor adventures.",
+			"secondText": "Skhidnytsia has long been a favorite among vacationers, offering a unique blend of wellness and relaxation. Thanks to the area's stunning scenery, therapeutic mineral waters, and growing popularity among tourists, investing in our cottages guarantees a stable and profitable return for investors."
+		},
+		"presentation": {
+			"title": "Learn More About Investing in Lehit Cottages",
+			"text": "Lehit cottages in Skhidnytsia are not just aesthetically pleasing and comfortable real estate but also a highly profitable investment opportunity. The financial model ensures a secure asset allocation for a stable passive income in the future.",
+			"btnText": "Download the detailed presentation about Lehit."
+		},
+		"faq": {
+			"title": "Frequently asked questions",
+			"blockTitle": "Still have questions?",
+			"blockText": "Please leave your details in the form and our manager will contact you shortly to provide all the answers to your questions."
+		},
+		"investIn": {
+			"title": "Invest in a dynamically developing region",
+			"textTitle": "Skhidnytsia is a place where peace meets the picturesque landscapes of the mountain slopes of the Carpathians and evergreen spruces.",
+			"firstText": "Coniferous forests, clean rivers, mineral waters, and the absence of city bustle all attract tourists from Ukraine. There are many interesting locations nearby, such as Fortress of Tustan, Skole Beskids National Nature Park, Sopit Waterfall. Every year more and more travelers come here who appreciate relaxation in an ecologically clean area at affordable prices."
+		},
+		"learnMore": {
+			"title": "Learn More About Investing in Lehit Cottages",
+			"description": "Please fill out the form and our manager can contact you and discuss the details"
+		},
+		"quality": {
+			"title": "High-quality service from the management company and reliable investment in real estate",
+			"firstText": "Investing in real estate is one of the best options for preserving capital. Capitalization is an important investment stage, as it brings a significant portion of money.",
+			"secondText": "The management company fully takes care of all the administration and maintenance of the complex. We guarantee the growth of the asset value and an impeccable level of service.",
+			"monthlyProfit": "Monthly Profit",
+      "payback": "Payback",
+      "annualIncome": "Annual Passive Income",
+      "upTo": "up to",
+      "years": "years",
+			"investor": "The investor receives:",
+			"company": "The management company guarantees:"
+		},
+		"calculator": {
+			"title": "Calculate the Profit from Your New Cottage",
+			"description": "Using an online calculator, you can make an individual calculation of the investment efficiency assessment.",
+			"result": {
+				"totalCost": "Total cost of the cottage",
+				"profit": "Profit",
+				"month": "month",
+				"payback": "Payback",
+				"years": "years",
+				"annual": "per annum"
+			},
+			"leftSection": {
+				"cottage": "Cottage",
+				"choose": "Choose a cottage",
+				"initialPayment": "The size of the initial payment",
+				"workload": "Workload"
+			}
+		}
+	},
+	"modal": {
+		"presentation": {
+			"title": "Recieve a presentation",
+			"description": "We will contact you soon"
+		},
+		"contact": {
+			"title": "Leave your request",
+			"description": "We will contact you soon"
+		}
+	}
+}
