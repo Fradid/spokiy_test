@@ -1,6 +1,5 @@
 "use client";
 
-import Header from "@/components/Header/Header";
 import { usePathname } from "@/i18n/routing";
 import { useLayoutEffect } from "react";
 
