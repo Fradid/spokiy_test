@@ -88,6 +88,10 @@
 			"phone": "Invalid number entered.",
 			"data": "Error sending data",
 			"smthingWrong": "Something went wrong. Please try again later."
+		},
+		"success": {
+			"title": "Thanks!",
+			"description": "Your application was successfully submitted. Our manager will contact you as soon as possible\nsometimes."
 		}
 	},
 	"sections": {
