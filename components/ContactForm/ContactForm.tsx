@@ -23,7 +23,7 @@ const ringFocus =
 const ContactForm = ({
 	onSuccess,
 	showTelegram = false,
-	btnModal = false
+	btnModal = false,
 }: ContactFormProps) => {
 	const t = useTranslations("form");
 	const btn = useTranslations("btnLabel");
@@ -84,11 +84,18 @@ const ContactForm = ({
 			} else {
 				setErrors((prev) => ({ ...prev, phone: t("errors.smthingWrong") }));
 			}
-		} catch (error: any) {
-			setErrors((prev) => ({
-				...prev,
-				phone: `${t("errors.data")}: ${error.message}`,
-			}));
+		} catch (error) {
+			if (axios.isAxiosError(error)) {
+				setErrors((prev) => ({
+					...prev,
+					phone: `${t("errors.data")}: ${error.message}`,
+				}));
+			} else {
+				setErrors((prev) => ({
+					...prev,
+					phone: `${t("errors.data")}: Unknown error`,
+				}));
+			}
 		}
 	};
 
@@ -104,7 +111,6 @@ const ContactForm = ({
 
 	return (
 		<div className="w-full max-w-md mx-auto px-4">
-
 			{sent ? (
 				<div className="text-center space-y-2">
 					<h3 className="text-lg font-medium text-green-700">{t("thanks")}</h3>
@@ -180,7 +186,11 @@ const ContactForm = ({
 					{/* Submit */}
 					<button
 						type="submit"
-						className={clsx("w-full font-CodecPro300 text-base border border-white py-3 px-5 leading-6 hover:bg-primary-80 transition hover:cursor-pointer", btnModal && "bg-primary-100 text-white text-center hover:bg-primary-80")}
+						className={clsx(
+							"w-full font-CodecPro300 text-base border border-white py-3 px-5 leading-6 hover:bg-primary-80 transition hover:cursor-pointer",
+							btnModal &&
+								"bg-primary-100 text-white text-center hover:bg-primary-80"
+						)}
 					>
 						{btn("formBtn")}
 					</button>

@@ -6,6 +6,7 @@ import Result from "./Result/Result";
 import Slider from "./Slider/Slider";
 import { calculator } from "@/data/cottages";
 import chevronDownIcon from "@/public/assets/icons/chevron-down.svg";
+import Image from "next/image";
 
 type Cottage = {
 	name: string;
@@ -133,7 +134,7 @@ const Calculator = () => {
 							</select>
 
 							<div className="pointer-events-none absolute top-8 right-2 flex items-center">
-								<img src={chevronDownIcon.src} alt="arrow" />
+								<Image src={chevronDownIcon.src} alt="arrow" />
 							</div>
 						</div>
 						<div className="flex flex-col gap-2 relative w-full md:w-1/2">
