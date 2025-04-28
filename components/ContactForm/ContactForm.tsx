@@ -113,8 +113,8 @@ const ContactForm = ({
 		<div className="w-full max-w-md mx-auto px-4">
 			{sent ? (
 				<div className="text-center space-y-2">
-					<h3 className="text-lg font-medium text-green-700">{t("thanks")}</h3>
-					<p className="text-sm text-gray-600">{t("YourApplication")}</p>
+					<h3 className="text-lg font-medium text-green-700">{t("success.title")}</h3>
+					<p className="text-sm text-gray-600">{t("success.description")}</p>
 				</div>
 			) : (
 				<form onSubmit={handleSubmit} className="space-y-5">
