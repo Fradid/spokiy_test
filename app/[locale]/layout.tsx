@@ -10,8 +10,8 @@ import { ModalProvider } from "@/context/ModalContext";
 import Modal from "@/components/Modal/Modal";
 
 export const metadata: Metadata = {
-  title: "Something we need to write",
-  description: "Description we need",
+	title: "Something we need to write",
+	description: "Description we need",
 };
 
 export async function generateStaticParams() {
@@ -30,17 +30,13 @@ export default async function RootLayout({
 	const messages = await getMessages({ locale });
 
 	return (
-		<html lang={locale}>
-			<body>
-				<NextIntlClientProvider locale={locale} messages={messages}>
-					<ModalProvider>
-						<Header />
-						{children}
-						<Footer />
-						<Modal />
-					</ModalProvider>
-				</NextIntlClientProvider>
-			</body>
-		</html>
+		<NextIntlClientProvider locale={locale} messages={messages}>
+			<ModalProvider>
+				<Header />
+				{children}
+				<Footer />
+				<Modal />
+			</ModalProvider>
+		</NextIntlClientProvider>
 	);
 }
