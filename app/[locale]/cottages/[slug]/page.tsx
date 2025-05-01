@@ -24,6 +24,18 @@ export async function generateMetadata({
 	};
 }
 
+const locales = ["uk", "en"];
+export async function generateStaticParams() {
+	return locales.flatMap((locale) =>
+		Object.values(cottages).map((cottage) => ({
+			locale,
+			slug: cottage.slug,
+		}))
+	);
+}
+
+export const dynamicParams = false;
+
 export default async function Home({
 	params,
 }: {
