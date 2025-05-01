@@ -92,7 +92,7 @@ const CottagesSlider = () => {
 						position: "right",
 						icon: arrowRight,
 					},
-				].map(({ onClick, disabled, position, icon }, i) => (
+				].map(({ onClick, disabled, position, icon }) => (
 					<button
 						key={position}
 						onClick={onClick}

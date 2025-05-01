@@ -3,14 +3,11 @@
 import Image from "next/image";
 
 import pattern from "@/public/assets/patterns/patterns.svg";
-import { useTranslations } from "next-intl";
 import List from "../List/List";
 import Carousel from "../Carousel/Carousel";
 import { CottageData } from "@/types/types";
 
 const About = ({ data }: { data: CottageData }) => {
-	const t = useTranslations("cottage");
-
 	return (
 		<section>
 			<div className="max-w-7xl flex flex-col items-center gap-3 sm:gap-0 sm:flex-row sm:items-start justify-between mx-auto p-10">

@@ -2,21 +2,13 @@
 
 import Image from "next/image";
 import logo from "@/public/assets/logo.svg";
-import { Link, useRouter, usePathname } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 import Navbar from "../Navbar/Navbar";
 import { useLocale } from "next-intl";
 
 const Header = () => {
-	// const router = useRouter();
 	const pathname = usePathname();
 	const locale = useLocale();
-
-	// // Handle language change
-	// const changeLanguage = (lang: string) => {
-	// 	if (lang !== locale) {
-	// 		router.push(pathname, { locale: lang, scroll: false });
-	// 	}
-	// };
 
 	// Generate language button classes
 	const getLangButtonClasses = (lang: string) => {
