@@ -22,7 +22,7 @@ const InfrastructureSlider = () => {
 		dots: false,
 		infinite: false,
 		arrows: false,
-		swipe: false,
+		swipe: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		afterChange: (index: number) => setCarouselIndex(index),
@@ -30,8 +30,8 @@ const InfrastructureSlider = () => {
 
 	return (
 		<div className="flex max-w-6xl">
-			<div className="flex justify-center lg:h-[600px]">
-				<div className="flex flex-col justify-between  lg:w-full">
+			<div className="flex flex-col-reverse justify-center items-center sm:items-start sm:flex-row lg:h-[600px]">
+				<div className="flex flex-col justify-between h-full lg:w-full">
 					<SlideContent
 						step={currentSlide.step}
 						title={currentSlide.title}
@@ -47,14 +47,14 @@ const InfrastructureSlider = () => {
 					/>
 				</div>
 
-				<div className="w-sm md:w-md lg:w-xl lg:h-full">
+				<div className="w-xs md:w-md lg:w-xl lg:h-full">
 					<Slider ref={sliderRef} {...settings}>
 						{infrastructureList.map((item) => (
 							<div key={item.id}>
 								<Image
 									src={item.imageUrl}
 									alt={item.title}
-									className="w-sm md:w-md lg:w-xl lg:h-full px-5"
+									className="w-sm md:w-md lg:w-xl lg:h-full sm:px-5"
 								/>
 							</div>
 						))}

@@ -14,7 +14,7 @@ const InfrastructureSection = () => {
 			<div className="flex flex-col items-start lg:h-[845px] p-5 lg:py-14 max-w-6xl mx-auto">
 				<div className="flex items-start justify-start gap-4 mb-5">
 					<Image src={pattern} alt="infrastructure" width={27} />
-					<h2 className="text-base leading-6 uppercase text-gray-100 font-CodecPro500 lg:text-2xl">
+					<h2 className="text-base leading-6 uppercase text-gray-100 font-CodecPro500 md:text-2xl">
 						{t("title")}
 					</h2>
 				</div>

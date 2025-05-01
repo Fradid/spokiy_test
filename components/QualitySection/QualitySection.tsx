@@ -36,16 +36,16 @@ const QualitySection = () => {
 			<div className="flex flex-col items-start md:flex-row justify-between gap-10 max-w-6xl mx-auto mb-10">
 				<div className="flex items-center gap-4 md:w-1/2">
 					<Image src={icon} alt="icon" width={30} />
-					<h2 className="text-base lg:text-2xl font-CodecPro500 uppercase text-gray-100">
+					<h2 className="text-base md:text-2xl font-CodecPro500 uppercase text-gray-100">
 						{t("title")}
 					</h2>
 				</div>
 
 				<div className="flex flex-col gap-6 md:w-1/2">
-					<p className="font-CodecPro300 text-sm lg:text-base text-gray-70 leading-6">
+					<p className="font-CodecPro300 text-sm md:text-base text-gray-70 leading-6">
 						{t("firstText")}
 					</p>
-					<p className="font-CodecPro300 text-sm lg:text-base text-gray-70 leading-6">
+					<p className="font-CodecPro300 text-sm md:text-base text-gray-70 leading-6">
 						{t("secondText")}
 					</p>
 				</div>
@@ -55,16 +55,16 @@ const QualitySection = () => {
 				{stats.map(({ amount, labelKey, prefixKey, unitKey }, index) => (
 					<React.Fragment key={index}>
 						<div className="flex flex-col items-center">
-							<p className="text-4xl lg:text-5xl text-secondary-100 font-CodecPro200">
+							<p className="text-4xl md:text-5xl text-secondary-100 font-CodecPro200">
 								{prefixKey && (
-									<span className="text-sm lg:text-base font-CodecPro300 text-secondary-100">
+									<span className="text-sm md:text-base font-CodecPro300 text-secondary-100">
 										{t(prefixKey)}
 									</span>
 								)}{" "}
 								{amount}{" "}
 								{unitKey && <span className="text-base">{t(unitKey)}</span>}
 							</p>
-							<p className="text-sm lg:text-base font-CodecPro300 text-gray-70 mt-2">
+							<p className="text-sm md:text-base font-CodecPro300 text-gray-70 mt-2">
 								{t(labelKey)}
 							</p>
 						</div>
@@ -82,14 +82,14 @@ const QualitySection = () => {
 			<div className="mx-auto flex flex-col max-w-6xl justify-around gap-10 sm:flex-row">
 				{/* Investor List */}
 				<div className="self-end ">
-					<h3 className="mb-5 font-CodecPro200 leading-[33.6px] text-base lg:text-2xl text-gray-100">
+					<h3 className="mb-5 font-CodecPro200 leading-[33.6px] text-base md:text-2xl text-gray-100">
 						{t("investor")}
 					</h3>
 					<ul>
 						{investor[locale].map((item, idx) => (
 							<li key={idx} className="flex flex-row-reverse sm:flex-row gap-4 mb-4">
 								<Image src={liFirst} alt={`bullet point ${idx}`} width={16} />
-								<p className="text-sm lg:text-base font-CodecPro300 text-gray-70 leading-6">
+								<p className="text-sm md:text-base font-CodecPro300 text-gray-70 leading-6">
 									{item}
 								</p>
 							</li>
@@ -102,14 +102,14 @@ const QualitySection = () => {
 
 				{/* Company List */}
 				<div>
-					<h3 className="mb-5 font-CodecPro200 leading-[33.6px] text-base lg:text-2xl text-gray-100">
+					<h3 className="mb-5 font-CodecPro200 leading-[33.6px] text-base md:text-2xl text-gray-100">
 						{t("company")}
 					</h3>
 					<ul>
 						{company[locale].map((item, idx) => (
 							<li key={idx} className="flex gap-4 mb-4">
 								<Image src={liSecond} alt={`bullet point ${idx}`} width={16} />
-								<p className="text-sm lg:text-base font-CodecPro300 text-gray-70 leading-6">
+								<p className="text-sm md:text-base font-CodecPro300 text-gray-70 leading-6">
 									{item}
 								</p>
 							</li>

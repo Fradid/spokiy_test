@@ -100,10 +100,10 @@ const Calculator = () => {
 
 	return (
 		<div className="flex flex-col items-center px-4">
-			<h2 className="uppercase font-CodecPro500 text-base lg:text-2xl leading-6 text-white mb-6">
+			<h2 className="uppercase font-CodecPro500 text-base md:text-2xl leading-6 text-white mb-6">
 				{t("title")}
 			</h2>
-			<p className="font-CodecPro300 text-sm lg:text-base leading-6 mb-8 lg:mb-12 text-gray-70 max-w-xl text-center">
+			<p className="font-CodecPro300 text-sm md:text-base leading-6 mb-8 lg:mb-12 text-gray-70 max-w-xl text-center">
 				{t("description")}
 			</p>
 
@@ -134,7 +134,7 @@ const Calculator = () => {
 							</select>
 
 							<div className="pointer-events-none absolute top-8 right-2 flex items-center">
-								<Image src={chevronDownIcon.src} alt="arrow" />
+								<Image src={chevronDownIcon} alt="arrow" />
 							</div>
 						</div>
 						<div className="flex flex-col gap-2 relative w-full md:w-1/2">

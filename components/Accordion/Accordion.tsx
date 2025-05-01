@@ -59,7 +59,7 @@ export default function Accordion({
 	return (
 		<div className={clsx("bg-primary-20", faqMode && "w-4/5 lg:w-full", classContainer)}>
 			{title && (
-				<h2 className="mb-8 lg:mb-[72px] text-base lg:text-2xl font-CodecPro500 uppercase text-gray-100">
+				<h2 className="mb-8 lg:mb-[72px] text-base md:text-2xl font-CodecPro500 uppercase text-gray-100">
 					{title}
 				</h2>
 			)}
@@ -102,7 +102,7 @@ export default function Accordion({
 							)}
 
 							<p
-								className={`font-CodecPro300 text-sm lg:text-base leading-6 ${
+								className={`font-CodecPro300 text-sm md:text-base leading-6 ${
 									faqMode && "w-[95%]"
 								}`}
 							>
@@ -134,7 +134,7 @@ export default function Accordion({
 								>
 									<p
 										className={clsx(
-											"font-CodecPro200 text-sm lg:text-base text-gray-70",
+											"font-CodecPro200 text-sm md:text-base text-gray-70",
 											faqMode && "text-sm leading-[19.6px] pb-6 w-[95%]"
 										)}
 									>

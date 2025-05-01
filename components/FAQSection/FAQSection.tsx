@@ -22,7 +22,7 @@ const FAQSection = () => {
 		<section className="max-w-7xl mx-auto p-6 lg:p-14">
 			<div className="mb-2.5 flex flex-col items-center justify-center gap-2 lg:gap-8">
 				<Image src={pattern} alt="Decorative pattern" />
-				<h2 className="text-base lg:text-2xl uppercase leading-6 text-gray-100 font-CodecPro500">
+				<h2 className="text-base md:text-2xl uppercase leading-6 text-gray-100 font-CodecPro500">
 					{t("title")}
 				</h2>
 			</div>
@@ -43,11 +43,11 @@ const FAQSection = () => {
 						</p>
 					</div>
 					<div className="flex flex-col md:flex-row lg:flex-col gap-4 w-full">
-						<button className="text-white font-CodecPro300 text-sm lg:text-base border border-white leading-6 py-3 px-5 w-full text-center hover:bg-primary-80 hover:cursor-pointer">
+						<button className="text-white font-CodecPro300 text-sm md:text-base border border-white leading-6 py-3 px-5 w-full text-center hover:bg-primary-80 hover:cursor-pointer">
 							+380 73 808 11 88
 						</button>
 						<button
-							className="bg-white text-primary-100 font-CodecPro300 text-sm lg:text-base leading-6 py-3 px-5 w-full text-center hover:bg-primary-50 hover:cursor-pointer"
+							className="bg-white text-primary-100 font-CodecPro300 text-sm md:text-base leading-6 py-3 px-5 w-full text-center hover:bg-primary-50 hover:cursor-pointer"
 							onClick={() => toggle("contact")}
 						>
 							{btn("formBtn")}

@@ -37,7 +37,6 @@ export default async function Home({
 }: {
 	params: Promise<{ locale: string }>;
 }) {
-	await new Promise((resolve) => setTimeout(resolve, 3000));
 	const { locale } = await params;
 	const t = await getTranslations({ locale });
 

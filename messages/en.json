@@ -6,7 +6,7 @@
 		},
 		"main": {
 			"title": "Lehit - a recreation complex in the Carpathians",
-  		"description": "Immerse yourself in a world where the gentle breeze of the Carpathians and the depth of primordial forests softly embrace you, offering peace and harmony. Our recreation complex will leave unforgettable memories in the heart of every guest."
+			"description": "Immerse yourself in a world where the gentle breeze of the Carpathians and the depth of primordial forests softly embrace you, offering peace and harmony. Our recreation complex will leave unforgettable memories in the heart of every guest."
 		},
 		"about": {
 			"title": "About the recreation complex",
@@ -29,7 +29,7 @@
 		},
 		"main": {
 			"title": "Investments in a recreation complex in the Carpathians",
-  		"description": "Investing your cash assets in real estate in the Carpathians will provide you with monthly passive income and a place to relax without unnecessary worries."
+			"description": "Investing your cash assets in real estate in the Carpathians will provide you with monthly passive income and a place to relax without unnecessary worries."
 		}
 	},
 	"navbar": {
@@ -150,10 +150,10 @@
 			"firstText": "Investing in real estate is one of the best options for preserving capital. Capitalization is an important investment stage, as it brings a significant portion of money.",
 			"secondText": "The management company fully takes care of all the administration and maintenance of the complex. We guarantee the growth of the asset value and an impeccable level of service.",
 			"monthlyProfit": "Monthly Profit",
-      "payback": "Payback",
-      "annualIncome": "Annual Passive Income",
-      "upTo": "up to",
-      "years": "years",
+			"payback": "Payback",
+			"annualIncome": "Annual Passive Income",
+			"upTo": "up to",
+			"years": "years",
 			"investor": "The investor receives:",
 			"company": "The management company guarantees:"
 		},
@@ -184,6 +184,76 @@
 		"contact": {
 			"title": "Leave your request",
 			"description": "We will contact you soon"
+		}
+	},
+	"cottage": {
+		"main": {
+			"shortInfo": "Short information",
+			"area": "Total area",
+			"cost": "Cost of the house",
+			"payback": "Payback"
+		},
+		"about": {
+			"title": "About cottage",
+			"explication": "Explication",
+			"kitchen": "Kitchen-living room",
+			"firstBedroom": "Bedroom 1",
+			"secondBedroom": "Bedroom 2",
+			"bathroom": "Bathroom",
+			"terrace": "Terrace"
+		},
+		"facility": {
+			"title": "Amenities",
+			"mount": "Mountain and river views",
+			"sun": "Spacious terrace",
+			"wave": "Fireplace",
+			"wind": "Air conditioner",
+			"cup": "Coffee machine",
+			"plate": "Induction hob",
+			"tv": "HDTV TV set",
+			"wifi": "High-speed internet"
+		},
+		"interior": {
+			"title": "Interior",
+			"color": "Colour scheme",
+			"style": {
+				"title": "General style",
+				"description": "Wabi Sabi, Minimalism"
+			},
+			"design": "Design features"
+		},
+		"table": {
+			"read": "Read more",
+			"square": "Area",
+			"cost30": "The cost of a cottage with a 30% down payment",
+			"cost50": "The cost of a cottage with a 50% down payment",
+			"cost70": "The cost of a cottage with a 70% down payment",
+			"cost100": "The cost of a cottage with a 100% down payment",
+			"average": "Average rental cost per 9 years",
+			"calculate": "Profit calculation",
+			"profit": "Profit",
+			"management": "Cost of management",
+			"workload": "Projected workload per year"
+		},
+		"podyh": {
+			"description": "A Spacious two-level cottage with two comfortable bedrooms and a large living room. An ideal choice for a big family or a company that appreciates cosiness and impeccable comfort in every detail.",
+			"interior": "The use of natural fabrics, wooden furniture, designer paintings, lamps woven from rope and straw."
+		},
+		"nebo": {
+			"description": "An attractive cottage elevated on stilts, seeming to float above the ground and offering breathtaking panoramic views. A cozy living room with a fireplace and panoramic windows floods the space with natural light, bringing a sense of comfort and tranquility. Ideal for those seeking to enjoy the beauty of nature.",	
+			"interior": "The use of natural fabrics, wooden furniture, designer paintings."
+		},
+		"solar": {
+			"description": "A cozy two-level cottage, part of a duplex with a private entrance. This is a space for a comfortable stay, thought out to the smallest detail. The cottage is perfect for a couple or a family, guaranteeing everyone comfort and convenience during their stay.",
+			"interior": "The use of natural fabrics, wooden furniture, designer paintings, lamps woven from straw."
+		},
+		"svitanok": {
+			"description": "A cottage with an atmosphere of cosiness and harmony. The space is filled with light thanks to the large panoramic windows that offer stunning views of nature, and the fireplace and soft furniture perfectly complement the interior for a pleasant stay. It is perfect for those who are looking for an escape from the city noise and dream of a weekend surrounded by nature.",
+			"interior": "The use of natural fabrics, wooden furniture, designer paintings."
+		},
+		"dyvo": {
+			"description": "A single-level cottage with the layout of a cozy apartment. A separate bedroom, a living room with a large, comfortable sofa, and a bar counter for evening gatherings—here, you’ll feel right at home. Perfect for couples or a secluded retreat.",
+			"interior": "The use of natural fabrics, wooden furniture, designer paintings, lamps woven from rope and straw."
 		}
 	}
 }

@@ -7,16 +7,16 @@ import Navbar from "../Navbar/Navbar";
 import { useLocale } from "next-intl";
 
 const Header = () => {
-	const router = useRouter();
+	// const router = useRouter();
 	const pathname = usePathname();
 	const locale = useLocale();
 
-	// Handle language change
-	const changeLanguage = (lang: string) => {
-		if (lang !== locale) {
-			router.push(pathname, { locale: lang, scroll: false });
-		}
-	};
+	// // Handle language change
+	// const changeLanguage = (lang: string) => {
+	// 	if (lang !== locale) {
+	// 		router.push(pathname, { locale: lang, scroll: false });
+	// 	}
+	// };
 
 	// Generate language button classes
 	const getLangButtonClasses = (lang: string) => {
@@ -36,13 +36,15 @@ const Header = () => {
 				<Navbar />
 				<div className="flex gap-3 text-lg font-CodecPro200 text-gray-70 leading-[18px]">
 					{["uk", "en"].map((lang) => (
-						<button
+						<Link
 							key={lang}
-							onClick={() => changeLanguage(lang)}
+							href={pathname}
+							locale={lang}
+							scroll={false}
 							className={getLangButtonClasses(lang)}
 						>
 							{lang.toUpperCase()}
-						</button>
+						</Link>
 					))}
 				</div>
 			</div>

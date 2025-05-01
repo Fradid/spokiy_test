@@ -26,7 +26,7 @@ const ReusableSection = ({
 				<div className="flex flex-col gap-8 w-full lg:w-1/2">
 					<div className="flex items-center gap-4">
 						<Image src={icon} alt="icon" width={30} />
-						<h2 className="text-base lg:text-2xl font-CodecPro500 uppercase text-gray-100">
+						<h2 className="text-base md:text-2xl font-CodecPro500 uppercase text-gray-100">
 							{title}
 						</h2>
 					</div>
@@ -40,14 +40,14 @@ const ReusableSection = ({
 					</div>
 				</div>
 				<div className="flex flex-col gap-6 w-full lg:w-1/2">
-					<h3 className="font-CodecPro200 text-base lg:text-2xl text-gray-100 leading-[33.6px]">
+					<h3 className="font-CodecPro200 text-base md:text-2xl text-gray-100 leading-[33.6px]">
 						{textTitle}
 					</h3>
-					<p className="font-CodecPro300 text-sm lg:text-base text-gray-70 leading-6">
+					<p className="font-CodecPro300 text-sm md:text-base text-gray-70 leading-6">
 						{firstText}
 					</p>
 					{secondText && (
-						<p className="font-CodecPro300 text-sm lg:text-base text-gray-70 leading-6">
+						<p className="font-CodecPro300 text-sm md:text-base text-gray-70 leading-6">
 							{secondText}
 						</p>
 					)}

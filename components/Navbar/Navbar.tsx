@@ -98,7 +98,7 @@ const Navbar = () => {
 				className="py-4 pl-4 pr-3 hover:bg-primary-30 cursor-pointer"
 			>
 				<Link
-					href={`/cottages/${key.replace("-", ".")}`}
+					href={key === "showAll" ? "/cottages" : `/cottages/${key.replace("-", ".")}`}
 					onClick={() => setMobileMenuOpen(false)}
 				>
 					<div className="flex flex-col gap-1">
@@ -210,7 +210,7 @@ const Navbar = () => {
 											{cottagesSections.map((key) => (
 												<li key={key}>
 													<Link
-														href={`/cottages/${key.replace("-", ".")}`}
+														href={key === "showAll" ? "/cottages" : `/cottages/${key.replace("-", ".")}`}
 														onClick={() => setMobileMenuOpen(false)}
 														className="flex justify-between"
 													>

@@ -22,6 +22,11 @@
   --color-gray-30: #f5f5f5;
   --color-gray-20: #fafafa;
   --color-gray-0: #fff;
+	--color-brown: #462212;
+	--color-brown-100: #9A795E;
+	--color-brown-200: #A47D52;
+	--color-brown-300: #BFA68B;
+	--color-brown-400: #ECE3DA;
 	--font-CodecPro200: 'CodecPro200', sans-serif;
 	--font-CodecPro300: 'CodecPro300', sans-serif;
 	--font-CodecPro500: 'CodecPro500', sans-serif;
@@ -74,5 +79,5 @@ html, body {
 }
 
 .customCottageSlider .slick-slide:not(.slick-active) {
-  padding: 60px 80px;
+	@apply p-0 md:p-5 lg:py-[60px] lg:px-20;
 }
