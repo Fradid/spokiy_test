@@ -10,9 +10,14 @@ import clsx from "clsx";
 interface CarouselProps {
 	images: StaticImageData[];
 	section?: boolean;
+	exterior?: boolean;
 }
 
-const Carousel = ({ images, section = false }: CarouselProps) => {
+const Carousel = ({
+	images,
+	section = false,
+	exterior = false,
+}: CarouselProps) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const sliderRef = useRef<Slider | null>(null);
 
@@ -46,9 +51,41 @@ const Carousel = ({ images, section = false }: CarouselProps) => {
 		<div
 			className={clsx(
 				"relative",
-				section ? "max-w-7xl mt-7 mx-auto" : "w-full max-w-xs md:max-w-sm mx-auto"
+				section && !exterior && "max-w-7xl mt-7 mx-auto",
+				!section && !exterior && "w-full max-w-xs md:max-w-sm mx-auto",
+				exterior && section && "max-w-7xl mx-auto mt-0"
 			)}
 		>
+			{exterior && (
+				<div className="flex justify-end gap-6 p-4">
+					{[
+						{
+							onClick: () => handleNavigation("prev"),
+							disabled: isFirstSlide,
+							icon: arrowLeft,
+						},
+						{
+							onClick: () => handleNavigation("next"),
+							disabled: isLastSlide,
+							icon: arrowRight,
+						},
+					].map(({ onClick, disabled, icon }, i) => (
+						<button
+							key={i}
+							onClick={onClick}
+							disabled={disabled}
+							className={clsx(
+								"transition-opacity",
+								disabled
+									? "opacity-30 cursor-default"
+									: "opacity-100 cursor-pointer"
+							)}
+						>
+							<Image src={icon} alt={`arrow-${i}`} className="invert brightness-0" />
+						</button>
+					))}
+				</div>
+			)}
 			<Slider {...settings} ref={sliderRef}>
 				{images.map((img, index) => (
 					<Image
@@ -60,34 +97,36 @@ const Carousel = ({ images, section = false }: CarouselProps) => {
 				))}
 			</Slider>
 
-			<div className="flex justify-center gap-6 mt-4">
-				{[
-					{
-						onClick: () => handleNavigation("prev"),
-						disabled: isFirstSlide,
-						icon: arrowLeft,
-					},
-					{
-						onClick: () => handleNavigation("next"),
-						disabled: isLastSlide,
-						icon: arrowRight,
-					},
-				].map(({ onClick, disabled, icon }, i) => (
-					<button
-						key={i}
-						onClick={onClick}
-						disabled={disabled}
-						className={clsx(
-							"transition-opacity",
-							disabled
-								? "opacity-30 cursor-default"
-								: "opacity-100 cursor-pointer"
-						)}
-					>
-						<Image src={icon} alt={`arrow-${i}`} />
-					</button>
-				))}
-			</div>
+			{!exterior && (
+				<div className="flex justify-center gap-6 mt-4">
+					{[
+						{
+							onClick: () => handleNavigation("prev"),
+							disabled: isFirstSlide,
+							icon: arrowLeft,
+						},
+						{
+							onClick: () => handleNavigation("next"),
+							disabled: isLastSlide,
+							icon: arrowRight,
+						},
+					].map(({ onClick, disabled, icon }, i) => (
+						<button
+							key={i}
+							onClick={onClick}
+							disabled={disabled}
+							className={clsx(
+								"transition-opacity",
+								disabled
+									? "opacity-30 cursor-default"
+									: "opacity-100 cursor-pointer"
+							)}
+						>
+							<Image src={icon} alt={`arrow-${i}`} />
+						</button>
+					))}
+				</div>
+			)}
 		</div>
 	);
 };

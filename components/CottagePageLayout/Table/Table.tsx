@@ -23,21 +23,23 @@ const metrics = [
 ];
 
 interface TableProps {
-	activeIndex: number;
+	activeIndex?: number;
+	showActiveColumn?: boolean;
 }
 
-const Table = ({ activeIndex }: TableProps) => {
+const Table = ({ activeIndex, showActiveColumn = true }: TableProps) => {
 	const t = useTranslations("cottage");
 	const [hoveredColumn, setHoveredColumn] = useState<number | null>(null);
-	const [activeColumn, setActiveColumn] = useState<number>(activeIndex);
+	const [activeColumn, setActiveColumn] = useState<number>(activeIndex || 0);
 
 	const orderedCottages = [
-		cottagesTableData[activeColumn],
-		cottagesTableData[activeColumn + 1],
-		...cottagesTableData.filter(
-			(_, index) => index !== activeColumn && index !== activeColumn + 1
-		),
-	].filter(Boolean);
+				cottagesTableData[activeColumn],
+				cottagesTableData[activeColumn + 1],
+				...cottagesTableData.filter(
+					(_, index) => index !== activeColumn && index !== activeColumn + 1
+				),
+		  ].filter(Boolean)
+		// : cottagesTableData;
 
 	const handleNavigation = (direction: "next" | "prev") => {
 		if (direction === "next" && activeColumn < cottagesTableData.length - 1) {
@@ -93,9 +95,9 @@ const Table = ({ activeIndex }: TableProps) => {
 										"hidden md:table-cell": index > 1,
 										// "hidden sm:table-cell": index > 0,
 										"bg-primary-30 border border-secondary-100":
-											isActive && isHovered,
+											showActiveColumn && isActive && isHovered,
 										"bg-secondary-20 border border-secondary-100":
-											isActive && !isHovered,
+											showActiveColumn && isActive && !isHovered,
 										"bg-primary-30": isHovered,
 									})}
 								>
@@ -141,8 +143,8 @@ const Table = ({ activeIndex }: TableProps) => {
 											"hidden md:table-cell": index > 1,
 											// "hidden sm:table-cell": index > 0,
 											"bg-primary-30 border-b-gray-40 border-x border-secondary-100":
-												isActive,
-											"bg-primary-30": isHovered || isActive,
+												isActive && showActiveColumn,
+											"bg-primary-30": isHovered && (isActive || isHovered),
 										})}
 									>
 										<p className="font-CodecPro300 text-sm md:text-base text-gray-100">

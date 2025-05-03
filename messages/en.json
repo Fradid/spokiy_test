@@ -39,6 +39,77 @@
 		"contacts": "Contact Us"
 	},
 	"cottages": {
+		"metatags": {
+			"title": "Carpathian homes | Houses for sale in Carpathian mountains from Lehit",
+			"description": "Buy a house in the Lehit recreation complex. Ecological homes for sale in Skhidnytsia. A large selection of Ukrainian houses for every taste in the Carpathian Mountains."
+		},
+		"main": {
+			"title": "Cottages in the Carpathians",
+			"description": "Real estate investment is one of the most effective strategies for stable capital growth. By choosing a house with a modern interior in a rapidly developing region, you become the owner of a property that will increase your assets."
+		},
+		"section": {
+			"title": "Cottages where your complete reset takes place",
+			"description": "The complex is located on the mountain river Stryi banks near a perennial coniferous forest. Here you can relax from the everyday hustle and bustle, be filled with new ideas, and restore your mental health."
+		},
+		"genplan": {
+			"title": "Get to know the master plan of the Lehit complex",
+			"description": "Preserving and increasing capital by investing in recreational complexes is always profitable, convenient, and reasonable."
+		},
+		"comfort": {
+			"title": "Comfort and tranquility among the Carpathian Mountains",
+			"description": "Our cottages combine aesthetics and comfort. Panoramic windows with a beautiful view give a feeling of unity with nature. The layout of each house is thought out to the smallest detail and will provide the best vacation.",
+			"list": "Cottages of the Lehit recreation complex are:"
+		},
+		"exterior": {
+			"title": "Technical characteristics",
+			"color": "Colour palette",
+			"foundation": {
+				"title": "Foundation",
+				"text": "Reinforced concrete slab on piles"
+			},
+			"walls": {
+				"title": "Walls",
+				"materials": "Wall materials",
+				"thickness": "Wall thickness",
+				"thermal": "Thermal insulation",
+				"decoration": "Finishing of external walls"
+			},
+			"roof": {
+				"title": "Roof",
+				"construction": "Roof structure",
+				"materials": "Roofing material",
+				"hydro": "Waterproofing",
+				"thermo": "Insulation"
+			},
+			"windows": {
+				"title": "Windows and doors",
+				"doors": "Windows and entrance doors",
+				"inside": "Internal doors"
+			},
+			"engineer": {
+				"title": "Engineering communications",
+				"heating": "Heating",
+				"water": "Water supply",
+				"sewerage": "Sewerage system",
+				"energy": "Power supply"
+			},
+			"interior": {
+				"title": "Interior decoration",
+				"walls": "Walls",
+				"ceiling": "Ceiling",
+				"floor": "Floor"
+			}
+		},
+		"carousel": {
+			"title": "Exquisite interior design in harmony with nature"
+		},
+		"table": {
+			"title": "Buying a house in the Carpathians is a profitable investment in the future"
+		},
+		"presentation": {
+			"title": "Invest in the future: Lehit cottages in the Carpathians heart",
+			"text": "We chose the picturesque village of Skhidnytsia for our resort complex - where natural beauty meets cozy comfort and harmony with nature. This region is actively developing and has a convenient infrastructure, but at the same time, it retains peace and harmony, giving a real rest without fuss. By investing in our cottages, you not only get a reliable source of passive income but also your corner for relaxation."
+		},
 		"podyh": "Cottage Podyh",
 		"nebo": "Cottage Nebo",
 		"solar3-1": "Cottage Solar 1",
@@ -240,7 +311,7 @@
 			"interior": "The use of natural fabrics, wooden furniture, designer paintings, lamps woven from rope and straw."
 		},
 		"nebo": {
-			"description": "An attractive cottage elevated on stilts, seeming to float above the ground and offering breathtaking panoramic views. A cozy living room with a fireplace and panoramic windows floods the space with natural light, bringing a sense of comfort and tranquility. Ideal for those seeking to enjoy the beauty of nature.",	
+			"description": "An attractive cottage elevated on stilts, seeming to float above the ground and offering breathtaking panoramic views. A cozy living room with a fireplace and panoramic windows floods the space with natural light, bringing a sense of comfort and tranquility. Ideal for those seeking to enjoy the beauty of nature.",
 			"interior": "The use of natural fabrics, wooden furniture, designer paintings."
 		},
 		"solar": {

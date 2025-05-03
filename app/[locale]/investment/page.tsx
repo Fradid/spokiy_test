@@ -35,7 +35,7 @@ export default function Home() {
 				title={t("investment.main.title")}
 				description={t("investment.main.description")}
 				btnLabel={t("btnLabel.leaveRequest")}
-				bgClass="bg-[url('/assets/Hero.png')]"
+				bgClass="bg-[url('/assets/investment.png')]"
 			/>
 			<QualitySection />
 			<Section />

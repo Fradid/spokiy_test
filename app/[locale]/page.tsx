@@ -124,7 +124,7 @@ export default async function Home({
 				secondText={t("sections.whyYouNeed.secondText")}
 			/>
 
-			<PresentationSection />
+			<PresentationSection title={t("sections.presentation.title")} text={t("sections.presentation.text")} />
 
 			<FAQSection />
 		</>

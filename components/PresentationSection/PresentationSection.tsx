@@ -6,20 +6,25 @@ import cottage from "@/public/assets/images/cottage1.jpg";
 import { useModal } from "@/context/ModalContext";
 import { useTranslations } from "next-intl";
 
-const PresentationSection = () => {
+interface PresentationProps {
+	title: string;
+	text: string;
+}
+
+const PresentationSection = ({ title, text }: PresentationProps) => {
 	const { toggle } = useModal();
 	const t = useTranslations("sections.presentation");
-	const btn = useTranslations("btnLabel")
+	const btn = useTranslations("btnLabel");
 
 	return (
 		<section id="presentation">
 			<div className="max-w-6xl p-6 lg:p-14 flex items-center flex-col md:flex-row gap-5 bg-primary-100 mx-auto">
 				<div className="w-full md:w-1/2">
 					<h2 className="font-CodecPro500 text-base md:text-2xl text-white mt-6 uppercase leading-6">
-						{t("title")}
+						{title}
 					</h2>
 					<p className="font-CodecPro200 text-sm md:text-base text-gray-30 mt-4 leading-6">
-						{t("text")}
+						{text}
 					</p>
 					<div className="flex flex-col gap-2">
 						<p className="font-CodecPro200 text-sm md:text-base text-gray-30 mt-4 leading-6">
@@ -33,7 +38,12 @@ const PresentationSection = () => {
 						</button>
 					</div>
 				</div>
-				<Image src={cottage} alt="presentation image" width={500} className="w-full md:w-1/2" />
+				<Image
+					src={cottage}
+					alt="presentation image"
+					width={500}
+					className="w-full md:w-1/2"
+				/>
 			</div>
 		</section>
 	);
