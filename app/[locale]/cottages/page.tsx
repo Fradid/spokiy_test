@@ -25,14 +25,14 @@ export async function generateMetadata({
 	const { locale } = await params;
 	const t = await getTranslations({ locale });
 
-	const baseUrl = "https://spokiy-test.vercel.app"
+	const baseUrl = "https://spokiy-test.vercel.app";
 
 	return {
 		title: t("cottages.metatags.title"),
 		description: t("cottages.metatags.description"),
 		alternates: {
-			canonical: `${baseUrl}/${locale}/cottages`
-		}
+			canonical: `${baseUrl}/${locale}/cottages`,
+		},
 	};
 }
 
@@ -56,13 +56,23 @@ export default async function Home({
 			/>
 
 			<section className="max-w-6xl flex flex-col md:flex-row gap-6 md:gap-0 mx-auto p-10 md:p-14">
-				<div className="w-full flex gap-4 items-start">
+				<div
+					className="w-full flex gap-4 items-start"
+					data-aos="fade-up-right"
+					data-aos-easing="linear"
+					data-aos-duration="300"
+				>
 					<Image src={pattern} alt="pattern" width={21} />
 					<h2 className="text-base leading-5 uppercase text-gray-100 font-CodecPro500 md:text-2xl lg:leading-6">
 						{t("cottages.section.title")}
 					</h2>
 				</div>
-				<p className="w-full font-CodecPro300 text-xs text-gray-70 leading-5 md:text-base lg:leading-6">
+				<p
+					className="w-full font-CodecPro300 text-xs text-gray-70 leading-5 md:text-base lg:leading-6"
+					data-aos="fade-down-left"
+					data-aos-easing="linear"
+					data-aos-duration="300"
+				>
 					{t("cottages.section.description")}
 				</p>
 			</section>
@@ -74,20 +84,43 @@ export default async function Home({
 						alt="patternGetToKnow"
 						className="absolute left-24 -top-6 sm:left-44 sm:-top-10 max-w-28 md:left-64 md:-top-11 w-full md:max-w-40 opacity-20"
 					/>
-					<h2 className="self-center text-center w-2/3 text-base leading-5 uppercase text-gray-100 font-CodecPro500 md:text-2xl lg:leading-6">
+					<h2
+						className="self-center text-center w-2/3 text-base leading-5 uppercase text-gray-100 font-CodecPro500 md:text-2xl lg:leading-6"
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="400"
+						data-aos-delay="100"
+					>
 						{t("cottages.genplan.title")}
 					</h2>
-					<p className="self-center text-center font-CodecPro300 text-xs text-gray-70 leading-5 md:text-base lg:leading-6">
+					<p
+						className="self-center text-center font-CodecPro300 text-xs text-gray-70 leading-5 md:text-base lg:leading-6"
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="300"
+						data-aos-delay="200"
+					>
 						{t("cottages.genplan.description")}
 					</p>
 					<Link
 						href="/ganplan"
 						className="self-center sm:max-w-2/5 bg-transparent border border-primary-40 text-primary-90 font-CodecPro300 text-sm leading-6 py-2 px-5 text-center hover:bg-primary-50 hover:border-primary-50 md:text-base lg:py-3"
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="300"
+						data-aos-delay="300"
 					>
 						{t("btnLabel.viewGenplan")}
 					</Link>
 				</div>
-				<div className="w-full h-screen bg-[url('/assets/cottagesSection.png')] bg-cover bg-center bg-no-repeat" />
+				<div
+					className="w-full h-screen bg-[url('/assets/cottagesSection.png')] bg-cover bg-center bg-no-repeat"
+					data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-duration="800"
+					data-aos-offset="0"
+					data-aos-delay="600"
+				/>
 			</section>
 
 			<ComfortSection />
@@ -96,7 +129,12 @@ export default async function Home({
 
 			<section className="bg-primary-100 py-5 sm:py-12">
 				<div className="max-w-7xl mx-auto relative">
-					<h2 className="px-8 font-CodecPro500 text-base md:text-2xl text-white uppercase leading-6">
+					<h2
+						className="px-8 font-CodecPro500 text-base md:text-2xl text-white uppercase leading-6"
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="300"
+					>
 						{t("cottages.carousel.title")}
 					</h2>
 					<Carousel images={imageSlides} section exterior />
@@ -104,7 +142,12 @@ export default async function Home({
 			</section>
 
 			<section>
-				<div className="flex flex-col items-center justify-center gap-6 pt-5 md:pt-10">
+				<div
+					className="flex flex-col items-center justify-center gap-6 pt-5 md:pt-10"
+					data-aos="fade-down"
+					data-aos-easing="linear"
+					data-aos-duration="300"
+				>
 					<Image src={rocks} alt="pattern" width={21} />
 					<h2 className="self-center text-center w-2/3 text-base leading-5 uppercase text-gray-100 font-CodecPro500 md:text-2xl lg:leading-6">
 						{t("cottages.table.title")}

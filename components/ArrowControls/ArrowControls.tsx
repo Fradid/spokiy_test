@@ -19,7 +19,14 @@ const ArrowControls = ({
 	onNext,
 }: ArrowControlsProps) => {
 	return (
-		<div className="flex items-center justify-between gap-6 pl-5 sm:justify-start">
+		<div
+			className="flex items-center justify-between gap-6 pl-5 sm:justify-start"
+			data-aos="fade-zoom-in"
+			data-aos-easing="ease-in-back"
+			data-aos-duration="700"
+			data-aos-delay="300"
+			data-aos-offset="0"
+		>
 			<p className="w-[44px]">
 				<span className="font-CodecPro300 md:text-base text-sm leading-5">
 					{currentIndex + 1}

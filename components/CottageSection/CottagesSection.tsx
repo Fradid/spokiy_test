@@ -12,7 +12,12 @@ const CottagesSection = () => {
 	return (
 		<section id="cottages" className="relative overflow-visible">
 			<div className="relative w-full max-w-6xl mx-auto pb-5 pt-14">
-				<div className="absolute -top-11 left-[32%]">
+				<div
+					className="absolute -top-11 left-[32%]"
+					data-aos="fade-down"
+					data-aos-easing="linear"
+					data-aos-duration="300"
+				>
 					<Image
 						src={pattern}
 						alt="Decorative background pattern"
@@ -20,11 +25,21 @@ const CottagesSection = () => {
 					/>
 				</div>
 
-				<h2 className="text-center text-gray-100 text-base md:text-2xl font-CodecPro500 uppercase leading-6 mx-3 lg:mx-0">
+				<h2
+					className="text-center text-gray-100 text-base md:text-2xl font-CodecPro500 uppercase leading-6 mx-3 lg:mx-0"
+					data-aos="fade-down"
+					data-aos-easing="linear"
+					data-aos-duration="300"
+				>
 					{t("title")}
 				</h2>
 
-				<p className="mt-6 mx-auto max-w-[596px] text-center text-sm md:text-base leading-6 font-CodecPro300">
+				<p
+					className="mt-6 mx-auto max-w-[596px] text-center text-sm md:text-base leading-6 font-CodecPro300"
+					data-aos="fade-down"
+					data-aos-easing="linear"
+					data-aos-duration="300"
+				>
 					{t("description")}
 				</p>
 

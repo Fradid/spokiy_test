@@ -39,7 +39,12 @@ const Result = ({ cost, profit, payback, annualReturn }: ResultProps) => {
 	];
 
 	return (
-		<div className="lg:ml-10 flex flex-col bg-gray-20 justify-around w-full lg:w-2/5">
+		<div
+			className="lg:ml-10 flex flex-col bg-gray-20 justify-around w-full lg:w-2/5"
+			data-aos="fade-up-left"
+			data-aos-easing="linear"
+			data-aos-duration="400"
+		>
 			<div className="bg-primary-100 p-8">
 				<p className="font-CodecPro300 text-xs leading-4 mb-2 text-gray-60">
 					{t("totalCost")}
@@ -63,7 +68,9 @@ const Result = ({ cost, profit, payback, annualReturn }: ResultProps) => {
 			<div className="border-t border-primary-40 p-6">
 				<button
 					className="w-full py-3 px-5 text-center text-primary-90 font-CodecPro300 text-sm md:text-base leading-6 border border-primary-40 bg-transparent hover:bg-primary-50 hover:border-primary-50 cursor-pointer"
-					onClick={() => {toggle("contact")}}
+					onClick={() => {
+						toggle("contact");
+					}}
 				>
 					{btn("formBtn")}
 				</button>

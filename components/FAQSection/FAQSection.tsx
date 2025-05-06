@@ -20,13 +20,21 @@ const FAQSection = () => {
 
 	return (
 		<section className="max-w-7xl mx-auto p-6 lg:p-14">
-			<div className="mb-2.5 flex flex-col items-center justify-center gap-2 lg:gap-8">
+			<div
+				className="mb-2.5 flex flex-col items-center justify-center gap-2 lg:gap-8"
+				data-aos="fade-down"
+				data-aos-delay="300"
+			>
 				<Image src={pattern} alt="Decorative pattern" />
 				<h2 className="text-base md:text-2xl uppercase leading-6 text-gray-100 font-CodecPro500">
 					{t("title")}
 				</h2>
 			</div>
-			<div className="flex items-center lg:items-start justify-between flex-col lg:flex-row gap-8 lg:mt-[45px]">
+			<div
+				className="flex items-center lg:items-start justify-between flex-col lg:flex-row gap-8 lg:mt-[45px]"
+				data-aos="fade-down-right"
+				data-aos-delay="400"
+			>
 				<Accordion
 					data={investmentPath ? investmentQuestions : questions}
 					faqMode
@@ -42,7 +50,11 @@ const FAQSection = () => {
 							{t("blockText")}
 						</p>
 					</div>
-					<div className="flex flex-col md:flex-row lg:flex-col gap-4 w-full">
+					<div
+						className="flex flex-col md:flex-row lg:flex-col gap-4 w-full"
+						data-aos="fade-up-left"
+						data-aos-delay="400"
+					>
 						<button className="text-white font-CodecPro300 text-sm md:text-base border border-white leading-6 py-3 px-5 w-full text-center hover:bg-primary-80 hover:cursor-pointer">
 							+380 73 808 11 88
 						</button>

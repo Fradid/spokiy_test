@@ -55,6 +55,9 @@ const InfrastructureSlider = () => {
 									src={item.imageUrl}
 									alt={item.title}
 									className="w-sm md:w-md lg:w-xl lg:h-full sm:px-5"
+									data-aos="fade-left"
+									data-aos-delay="300"
+									data-aos-duration="500"
 								/>
 							</div>
 						))}

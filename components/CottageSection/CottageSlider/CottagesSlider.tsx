@@ -120,7 +120,11 @@ const CottagesSlider = () => {
 						transition={{ duration: 0.5 }}
 						className="flex flex-col items-center gap-1 mt-4 min-h-[240px]"
 					>
-						<div className="flex gap-4 mb-4 justify-center mt-6">
+						<div
+							className="flex gap-4 mb-4 justify-center mt-6"
+							data-aos="fade-up"
+							data-aos-duration="500"
+						>
 							<p className="font-CodecPro500 text-gray-100 uppercase text-sm md:text-base leading-[22.4px]">
 								{currentSlide.title}
 							</p>
@@ -129,11 +133,19 @@ const CottagesSlider = () => {
 							</p>
 						</div>
 
-						<p className="font-CodecPro200 text-sm md:text-base leading-6 mx-auto max-w-[582px] text-gray-100 text-center">
+						<p
+							className="font-CodecPro200 text-sm md:text-base leading-6 mx-auto max-w-[582px] text-gray-100 text-center"
+							data-aos="fade-up"
+							data-aos-duration="500"
+						>
 							{currentSlide.description}
 						</p>
 
-						<div className="flex flex-wrap justify-center gap-2 mt-10">
+						<div
+							className="flex flex-wrap justify-center gap-2 mt-10"
+							data-aos="fade-up"
+							data-aos-duration="500"
+						>
 							<Metric
 								label={t("area")}
 								value={
@@ -150,7 +162,14 @@ const CottagesSlider = () => {
 				)}
 
 				{/* Action buttons */}
-				<div className="flex flex-col gap-6 mx-auto mt-[84px] mb-12 w-full max-w-[480px] md:flex-row">
+				<div
+					className="flex flex-col gap-6 mx-auto mt-[84px] mb-12 w-full max-w-[480px] md:flex-row"
+					data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-duration="700"
+					data-aos-delay="300"
+					data-aos-offset="0"
+				>
 					<button
 						className="bg-primary-100 text-white font-CodecPro300 text-sm md:text-base py-3 px-5 w-full text-center cursor-pointer hover:bg-primary-80"
 						onClick={() => toggle("contact")}

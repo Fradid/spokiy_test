@@ -26,6 +26,19 @@ const Carousel = ({
 	const isFirstSlide = currentIndex === 0;
 	const isLastSlide = currentIndex === images.length - slidesToShow;
 
+	const aosAttributes = !section
+		? {
+				"data-aos": "fade-right",
+				"data-aos-easing": "linear",
+				"data-aos-duration": "500",
+		  }
+		: {
+				"data-aos": "fade-up-left",
+				"data-aos-easing": "linear",
+				"data-aos-duration": "500",
+				"data-aos-delay": "200",
+		  };
+
 	const handleNavigation = (direction: "next" | "prev") => {
 		if (direction === "next" && !isLastSlide) {
 			sliderRef.current?.slickNext();
@@ -55,9 +68,17 @@ const Carousel = ({
 				!section && !exterior && "w-full max-w-xs md:max-w-sm mx-auto",
 				exterior && section && "max-w-7xl mx-auto mt-0"
 			)}
+			{...aosAttributes}
 		>
 			{exterior && (
-				<div className="flex justify-end gap-6 p-4">
+				<div
+					className="flex justify-end gap-6 p-4"
+					data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-duration="700"
+					data-aos-offset="0"
+					data-aos-delay="400"
+				>
 					{[
 						{
 							onClick: () => handleNavigation("prev"),
@@ -81,7 +102,11 @@ const Carousel = ({
 									: "opacity-100 cursor-pointer"
 							)}
 						>
-							<Image src={icon} alt={`arrow-${i}`} className="invert brightness-0" />
+							<Image
+								src={icon}
+								alt={`arrow-${i}`}
+								className="invert brightness-0"
+							/>
 						</button>
 					))}
 				</div>
@@ -98,7 +123,14 @@ const Carousel = ({
 			</Slider>
 
 			{!exterior && (
-				<div className="flex justify-center gap-6 mt-4">
+				<div
+					className="flex justify-center gap-6 mt-4"
+					data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-duration="700"
+					data-aos-offset="0"
+					data-aos-delay="400"
+				>
 					{[
 						{
 							onClick: () => handleNavigation("prev"),

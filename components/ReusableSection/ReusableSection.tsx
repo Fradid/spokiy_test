@@ -23,7 +23,11 @@ const ReusableSection = ({
 	return (
 		<section className="p-6 lg:p-14">
 			<div className="flex flex-col items-center md:items-start justify-between md:flex-row max-w-6xl mx-auto">
-				<div className="flex flex-col gap-8 w-full lg:w-1/2">
+				<div
+					className="flex flex-col gap-8 w-full lg:w-1/2"
+					data-aos="fade-right"
+					data-aos-delay="300"
+				>
 					<div className="flex items-center gap-4">
 						<Image src={icon} alt="icon" width={30} />
 						<h2 className="text-base md:text-2xl font-CodecPro500 uppercase text-gray-100">
@@ -39,7 +43,11 @@ const ReusableSection = ({
 						/>
 					</div>
 				</div>
-				<div className="flex flex-col gap-6 w-full lg:w-1/2">
+				<div
+					className="flex flex-col gap-6 w-full lg:w-1/2"
+					data-aos="fade-up"
+					data-aos-duration="500"
+				>
 					<h3 className="font-CodecPro200 text-base md:text-2xl text-gray-100 leading-[33.6px]">
 						{textTitle}
 					</h3>

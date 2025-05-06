@@ -100,16 +100,31 @@ const Calculator = () => {
 
 	return (
 		<div className="flex flex-col items-center px-4">
-			<h2 className="uppercase font-CodecPro500 text-base md:text-2xl leading-6 text-white mb-6">
+			<h2
+				className="uppercase font-CodecPro500 text-base md:text-2xl leading-6 text-white mb-6"
+				data-aos="fade-down"
+				data-aos-easing="linear"
+				data-aos-duration="400"
+			>
 				{t("title")}
 			</h2>
-			<p className="font-CodecPro300 text-sm md:text-base leading-6 mb-8 lg:mb-12 text-gray-70 max-w-xl text-center">
+			<p
+				className="font-CodecPro300 text-sm md:text-base leading-6 mb-8 lg:mb-12 text-gray-70 max-w-xl text-center"
+				data-aos="fade-up"
+				data-aos-easing="linear"
+				data-aos-duration="400"
+			>
 				{t("description")}
 			</p>
 
 			<div className="flex flex-col sm:flex-row justify-between items-start w-full gap-6 lg:gap-10 max-w-4xl">
 				{/* Inputs */}
-				<div className="flex flex-col gap-8 w-full lg:w-1/2">
+				<div
+					className="flex flex-col gap-8 w-full lg:w-1/2"
+					data-aos="fade-up-right"
+					data-aos-easing="linear"
+					data-aos-duration="400"
+				>
 					{/* Cottage */}
 					<div className="flex flex-col items-center gap-6 md:flex-row">
 						<div className="flex flex-col gap-2 relative w-full md:w-1/2">

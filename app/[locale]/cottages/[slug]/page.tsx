@@ -18,14 +18,14 @@ export async function generateMetadata({
 	const { locale, slug } = await params;
 	const t = await getTranslations({ locale });
 
-	const baseUrl = "https://spokiy-test.vercel.app"
+	const baseUrl = "https://spokiy-test.vercel.app";
 
 	return {
 		title: t("home.metatags.title"),
 		description: t("home.metatags.description"),
 		alternates: {
-			canonical: `${baseUrl}/${locale}/cottages/${slug}`
-		}
+			canonical: `${baseUrl}/${locale}/cottages/${slug}`,
+		},
 	};
 }
 
@@ -74,6 +74,11 @@ export default async function Home({
 					src={cottageData.bgImg}
 					alt={cottageData.slug}
 					className="w-full h-full object-cover"
+					data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-duration="800"
+					data-aos-offset="0"
+					data-aos-delay="600"
 				/>
 			</div>
 			<Table activeIndex={Object.values(cottages).indexOf(cottage)} />

@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ModalProvider } from "@/context/ModalContext";
 import Modal from "@/components/Modal/Modal";
+import ClientLayout from "@/components/ClientLayout/ClientLayout";
 
 export const metadata: Metadata = {
 	title: "Something we need to write",
@@ -33,7 +34,7 @@ export default async function RootLayout({
 		<NextIntlClientProvider locale={locale} messages={messages}>
 			<ModalProvider>
 				<Header />
-				{children}
+				<ClientLayout>{children}</ClientLayout>
 				<Footer />
 				<Modal />
 			</ModalProvider>

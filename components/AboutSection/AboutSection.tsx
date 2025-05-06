@@ -2,7 +2,6 @@
 
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
-import React from "react";
 import logo from "@/public/assets/logo.svg";
 import pattern from "@/public/assets/patterns/patterns.svg";
 import { useTranslations } from "next-intl";
@@ -14,7 +13,11 @@ const AboutSection = () => {
 		<section id="about" className="p-6 lg:p-14">
 			<div className="flex items-center max-w-6xl mx-auto flex-col md:flex-row md:items-start gap-10">
 				{/* Left Column */}
-				<div className="flex flex-col gap-8 w-full">
+				<div
+					className="flex flex-col gap-8 w-full"
+					data-aos="fade-right"
+					data-aos-delay="300"
+				>
 					<div className="flex items-center gap-4">
 						<Image src={pattern} alt="pattern" width={30} height={29} />
 						<h2 className="text-base leading-5 uppercase text-gray-100 font-CodecPro500 md:text-2xl lg:leading-6">
@@ -31,7 +34,11 @@ const AboutSection = () => {
 				</div>
 
 				{/* Right Column */}
-				<div className="flex flex-col gap-6 w-full">
+				<div
+					className="flex flex-col gap-6 w-full"
+					data-aos="fade-up"
+					data-aos-duration="500"
+				>
 					<h3 className="font-CodecPro200 text-sm text-gray-100 leading-7 md:text-2xl lg:leading-8">
 						{t("home.about.description")}
 					</h3>

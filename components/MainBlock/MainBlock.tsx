@@ -36,7 +36,13 @@ const MainBlock = ({
 					{description}
 				</p>
 			</article>
-			<div className="mt-10">
+			<div
+				className="mt-10"
+				data-aos="fade-zoom-in"
+				data-aos-easing="ease-in-back"
+				data-aos-duration="300"
+				data-aos-offset="0"
+			>
 				<button
 					className="font-CodecPro300 text-sm bg-gray-0/70 hover:bg-gray-0 text-primary-100 py-2 px-5 leading-6 transition md:text-base cursor-pointer lg:py-3"
 					onClick={() => toggle("contact")}

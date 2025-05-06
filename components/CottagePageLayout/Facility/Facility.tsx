@@ -29,23 +29,37 @@ const Facility = () => {
 	return (
 		<section>
 			<div className="flex flex-col max-w-7xl gap-10 py-14 px-10 mx-auto">
-				<h2 className="font-CodecPro500 text-base md:text-2xl uppercase text-gray-100">
+				<h2
+					className="font-CodecPro500 text-base md:text-2xl uppercase text-gray-100"
+					data-aos="fade-right"
+					data-aos-easing="linear"
+					data-aos-duration="500"
+				>
 					{t("facility.title")}
 				</h2>
 				<ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-					{facilities.map(({ icon, labelKey }, index) => (
-						<li
-							key={index}
-							className="bg-primary-30 flex items-center sm:flex-col sm:items-start gap-6 p-6"
-						>
-							<div className="bg-primary-20 flex items-center justify-center p-2 border border-secondary-20">
-								<Image src={icon} alt={labelKey} />
-							</div>
-							<p className="font-CodecPro300 text-sm text-gray-100 md:text-base">
-								{t(labelKey)}
-							</p>
-						</li>
-					))}
+					{facilities.map(({ icon, labelKey }, index) => {
+						const delay = [0, 200, 400, 600, 800, 1000, 1200, 1400];
+
+						return (
+							<li
+								key={index}
+								className="bg-primary-30 flex items-center sm:flex-col sm:items-start gap-6 p-6"
+								data-aos="fade-zoom-in"
+								data-aos-easing="ease-in-back"
+								data-aos-duration="800"
+								data-aos-offset="0"
+								data-aos-delay={delay[index % delay.length]}
+							>
+								<div className="bg-primary-20 flex items-center justify-center p-2 border border-secondary-20">
+									<Image src={icon} alt={labelKey} />
+								</div>
+								<p className="font-CodecPro300 text-sm text-gray-100 md:text-base">
+									{t(labelKey)}
+								</p>
+							</li>
+						);
+					})}
 				</ul>
 			</div>
 		</section>

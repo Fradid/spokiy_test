@@ -18,7 +18,12 @@ const Main = ({ data }: { data: CottageData }) => {
 				className="h-screen flex flex-col justify-end items-center p-5 bg-top bg-no-repeat bg-cover"
 				style={{ backgroundImage: `url(${data.bgUrl})` }}
 			>
-				<div className="w-full max-w-7xl p-20 lg:p-10 text-left">
+				<div
+					className="w-full max-w-7xl p-20 lg:p-10 text-left"
+					data-aos="fade-down"
+					data-aos-easing="linear"
+					data-aos-duration="400"
+				>
 					<h2 className="font-CodecPro500 uppercase text-white text-5xl lg:text-8xl max-w-xs lg:max-w-2xl">
 						{data.cottageName}
 					</h2>
@@ -54,18 +59,35 @@ const Main = ({ data }: { data: CottageData }) => {
 
 			{/* mobile version */}
 			<div className="flex flex-col max-w-2xs p-5 gap-5 mx-auto sm:hidden">
-				<p className="font-CodecPro500 text-gray-100 text-base sm:text-2xl uppercase">
+				<p
+					className="font-CodecPro500 text-gray-100 text-base sm:text-2xl uppercase"
+					data-aos="fade-right"
+					data-aos-easing="linear"
+					data-aos-duration="500"
+				>
 					{t("main.shortInfo")}
 				</p>
 
 				{/* Split Border */}
-				<div className="relative w-full h-0.5">
+				<div
+					className="relative w-full h-0.5"
+					data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-duration="700"
+					data-aos-offset="0"
+				>
 					<div className="absolute bottom-0 left-0 h-0.5 w-44 bg-gray-80" />
 					<div className="absolute bottom-0 left-44 right-0 h-px bg-gray-60" />
 				</div>
 
 				{/* Cottage details list */}
-				<ul className="flex gap-3 flex-wrap">
+				<ul
+					className="flex gap-3 flex-wrap"
+					data-aos="fade-zoom-in"
+					data-aos-easing="ease-in-back"
+					data-aos-duration="700"
+					data-aos-offset="0"
+				>
 					{details.map(({ label, value }, index) => (
 						<li key={index} className="flex flex-col gap-2">
 							<p className="text-sm sm:text-lg text-gray-80 font-CodecPro300">

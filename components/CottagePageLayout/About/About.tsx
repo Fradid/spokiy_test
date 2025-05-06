@@ -11,13 +11,23 @@ const About = ({ data }: { data: CottageData }) => {
 	return (
 		<section>
 			<div className="max-w-7xl flex flex-col items-center gap-3 sm:gap-0 sm:flex-row sm:items-start justify-between mx-auto p-10">
-				<div className="w-3xs sm:w-1/2 flex items-center gap-8">
+				<div
+					className="w-3xs sm:w-1/2 flex items-center gap-8"
+					data-aos="fade-right"
+					data-aos-easing="linear"
+					data-aos-duration="500"
+				>
 					<Image src={pattern} alt="pattern" />
 					<h2 className="font-CodecPro500 text-base uppercase text-gray-100 md:text-2xl">
 						{data.cottageName}
 					</h2>
 				</div>
-				<p className="w-3xs sm:w-1/2 font-CodecPro300 text-base text-gray-100 md:text-2xl">
+				<p
+					className="w-3xs sm:w-1/2 font-CodecPro300 text-base text-gray-100 md:text-2xl"
+					data-aos="fade-up"
+					data-aos-easing="linear"
+					data-aos-duration="500"
+				>
 					{data.text}
 				</p>
 			</div>

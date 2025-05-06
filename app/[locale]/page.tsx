@@ -26,14 +26,14 @@ export async function generateMetadata({
 	const { locale } = await params;
 	const t = await getTranslations({ locale });
 
-	const baseUrl = "https://spokiy-test.vercel.app"
+	const baseUrl = "https://spokiy-test.vercel.app";
 
 	return {
 		title: t("home.metatags.title"),
 		description: t("home.metatags.description"),
 		alternates: {
-			canonical: `${baseUrl}/${locale}`
-		}
+			canonical: `${baseUrl}/${locale}`,
+		},
 	};
 }
 
@@ -68,31 +68,62 @@ export default async function Home({
 
 			<section id="payback" className="bg-primary-100">
 				<div className="w-full max-w-6xl mx-auto py-14 flex flex-col items-center px-4 sm:px-6">
-					<Image src={pattern} alt="pattern" width={21} />
+					<Image
+						src={pattern}
+						alt="pattern"
+						width={21}
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="300"
+					/>
 
-					<h2 className="mt-6 text-white uppercase text-base font-CodecPro500 leading-6 text-center md:text-2xl">
+					<h2
+						className="mt-6 text-white uppercase text-base font-CodecPro500 leading-6 text-center md:text-2xl"
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="300"
+					>
 						{t("sections.payback.title")}
 					</h2>
 
-					<p className="mt-4 text-sm leading-6 text-gray-30 font-CodecPro200 text-center px-10 lg:px-0 md:text-base">
+					<p
+						className="mt-4 text-sm leading-6 text-gray-30 font-CodecPro200 text-center px-10 lg:px-0 md:text-base"
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="300"
+					>
 						{t("sections.payback.intro")}
 					</p>
 
-					<p className="mt-4 text-sm leading-6 text-gray-30 font-CodecPro200 text-center px-10 lg:px-0 md:text-base">
+					<p
+						className="mt-4 text-sm leading-6 text-gray-30 font-CodecPro200 text-center px-10 lg:px-0 md:text-base"
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="300"
+					>
 						{t("sections.payback.potential")}
 					</p>
 
 					<div className="flex flex-wrap flex-col gap-4 justify-center mt-12 md:flex-row md:gap-0">
-						{paybackSections.map((section, idx) => (
-							<div
-								key={idx}
-								className={`flex-1 h-[57px] px-5 py-5 flex items-center justify-center text-[14px] leading-[19.6px] font-CodecPro300 text-secondary-10 text-center lg:py-0 ${
-									backgroundColors[idx % backgroundColors.length]
-								}`}
-							>
-								{section}
-							</div>
-						))}
+						{paybackSections.map((section, idx) => {
+							const durations = [700, 900, 1100, 1300];
+							const delays = [100, 300, 500, 700];
+							return (
+								<div
+									key={idx}
+									className={`flex-1 h-[57px] px-5 py-5 flex items-center justify-center text-[14px] leading-[19.6px] font-CodecPro300 text-secondary-10 text-center lg:py-0 ${
+										backgroundColors[idx % backgroundColors.length]
+									}`}
+									data-aos="fade-zoom-in"
+									data-aos-easing="ease-in-back"
+									data-aos-duration={durations[idx % durations.length]}
+									data-aos-delay={delays[idx % delays.length]}
+									data-aos-offset="0"
+								>
+									{section}
+								</div>
+							);
+						})}
 					</div>
 				</div>
 			</section>
@@ -101,7 +132,11 @@ export default async function Home({
 
 			<section id="advantages">
 				<div className="flex flex-col items-center pt-14 h-[700px] lg:h-[819px] bg-[url('/assets/treasures-bg.jpg')] bg-bottom bg-no-repeat bg-cover relative">
-					<div className="absolute lg:w-6xl">
+					<div
+						className="absolute lg:w-6xl"
+						data-aos="fade-up-right"
+						data-aos-delay="300"
+					>
 						<Accordion
 							data={advantages}
 							title={t("sections.advantages.title")}
@@ -129,7 +164,10 @@ export default async function Home({
 				secondText={t("sections.whyYouNeed.secondText")}
 			/>
 
-			<PresentationSection title={t("sections.presentation.title")} text={t("sections.presentation.text")} />
+			<PresentationSection
+				title={t("sections.presentation.title")}
+				text={t("sections.presentation.text")}
+			/>
 
 			<FAQSection />
 		</>

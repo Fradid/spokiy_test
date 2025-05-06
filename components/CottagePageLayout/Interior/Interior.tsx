@@ -1,8 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-// import Image from "next/image"; // Uncomment if you restore the pattern
-// import pattern from "@/public/assets/patterns/08.svg";
+import Image from "next/image";
+import pattern from "@/public/assets/patterns/correct16.svg";
 
 interface InteriorProps {
 	description: string;
@@ -28,12 +28,23 @@ const Interior = ({ description }: InteriorProps) => {
 
 	return (
 		<section className="max-w-7xl p-14 mx-auto relative">
-			<h2 className="font-CodecPro500 text-base md:text-2xl uppercase text-gray-100">
+			<h2
+				className="font-CodecPro500 text-base md:text-2xl uppercase text-gray-100"
+				data-aos="fade-right"
+				data-aos-easing="linear"
+				data-aos-duration="500"
+			>
 				{t("interior.title")}
 			</h2>
 
 			<ul className="flex flex-col mt-6 gap-6 md:gap-0">
-				<li className={rowBaseStyle}>
+				<li
+					className={rowBaseStyle}
+					data-aos="fade-up"
+					data-aos-easing="linear"
+					data-aos-duration="500"
+					data-aos-delay="200"
+				>
 					<p className={labelStyle}>{t("interior.color")}</p>
 					<div className="flex gap-3 md:w-4/5">
 						{colorClasses.map((color, idx) => (
@@ -45,19 +56,34 @@ const Interior = ({ description }: InteriorProps) => {
 					</div>
 				</li>
 
-				<li className={borderedRow}>
+				<li
+					className={borderedRow}
+					data-aos="fade-up"
+					data-aos-easing="linear"
+					data-aos-duration="500"
+					data-aos-delay="400"
+				>
 					<p className={labelStyle}>{t("interior.style.title")}</p>
 					<p className={contentStyle}>{t("interior.style.description")}</p>
 				</li>
 
-				<li className={borderedRow}>
+				<li
+					className={borderedRow}
+					data-aos="fade-up"
+					data-aos-easing="linear"
+					data-aos-duration="500"
+					data-aos-delay="600"
+				>
 					<p className={labelStyle}>{t("interior.design")}</p>
 					<p className={contentStyle}>{description}</p>
 				</li>
 			</ul>
 
-			{/* Uncomment below to include the background pattern */}
-			{/* <Image src={pattern} alt="pattern" className="absolute right-16 -top-24 w-72 opacity-20" /> */}
+			<Image
+				src={pattern}
+				alt="pattern"
+				className="absolute right-1 -top-24 w-full max-w-40 md:max-w-52 lg:max-w-3xs opacity-20 -z-50"
+			/>
 		</section>
 	);
 };

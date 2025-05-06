@@ -19,14 +19,14 @@ export async function generateMetadata({
 	const { locale } = await params;
 	const t = await getTranslations({ locale });
 
-	const baseUrl = "https://spokiy-test.vercel.app"
+	const baseUrl = "https://spokiy-test.vercel.app";
 
 	return {
 		title: t("investment.metatags.title"),
 		description: t("investment.metatags.description"),
 		alternates: {
-			canonical: `${baseUrl}/${locale}/investment`
-		}
+			canonical: `${baseUrl}/${locale}/investment`,
+		},
 	};
 }
 
@@ -52,10 +52,20 @@ export default async function Home({
 				<div className="flex flex-col max-w-6xl mx-auto items-center bg-primary-100 md:flex-row gap-4 md:gap-12 justify-between px-5 md:px-20 py-14">
 					<div className="flex flex-col max-w-md mx-auto px-4 sm:px-0">
 						<Image src={pattern} alt="pattern" className="mb-8" />
-						<h2 className="text-2xl uppercase font-CodecPro500 leading-6 mb-2.5">
+						<h2
+							className="text-2xl uppercase font-CodecPro500 leading-6 mb-2.5"
+							data-aos="fade-down"
+							data-aos-easing="linear"
+							data-aos-duration="300"
+						>
 							{t("sections.learnMore.title")}
 						</h2>
-						<p className="text-base font-CodecPro300 leading-6 text-gray-30">
+						<p
+							className="text-base font-CodecPro300 leading-6 text-gray-30"
+							data-aos="fade-up"
+							data-aos-easing="linear"
+							data-aos-duration="300"
+						>
 							{t("sections.learnMore.description")}
 						</p>
 					</div>
