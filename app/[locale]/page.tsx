@@ -26,9 +26,14 @@ export async function generateMetadata({
 	const { locale } = await params;
 	const t = await getTranslations({ locale });
 
+	const baseUrl = "https://spokiy-test.vercel.app"
+
 	return {
 		title: t("home.metatags.title"),
 		description: t("home.metatags.description"),
+		alternates: {
+			canonical: `${baseUrl}/${locale}`
+		}
 	};
 }
 

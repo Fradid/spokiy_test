@@ -2,13 +2,12 @@ import Table from "@/components/CottagePageLayout/Table/Table";
 import MainBlock from "@/components/MainBlock/MainBlock";
 import PresentationSection from "@/components/PresentationSection/PresentationSection";
 import { Metadata } from "next";
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import pattern from "@/public/assets/patterns/03.svg";
 import rocks from "@/public/assets/patterns/02.svg";
 import patternSect from "@/public/assets/patterns/08.svg";
-import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import ComfortSection from "@/components/ComfortSection/ComfortSection";
 import ExteriorSection from "@/components/ExteriorSection/ExteriorSection";
 import Carousel from "@/components/CottagePageLayout/Carousel/Carousel";
@@ -26,14 +25,24 @@ export async function generateMetadata({
 	const { locale } = await params;
 	const t = await getTranslations({ locale });
 
+	const baseUrl = "https://spokiy-test.vercel.app"
+
 	return {
 		title: t("cottages.metatags.title"),
 		description: t("cottages.metatags.description"),
+		alternates: {
+			canonical: `${baseUrl}/${locale}/cottages`
+		}
 	};
 }
 
-export default function Home() {
-	const t = useTranslations();
+export default async function Home({
+	params,
+}: {
+	params: Promise<{ locale: string }>;
+}) {
+	const { locale } = await params;
+	const t = await getTranslations({ locale });
 
 	const imageSlides = [podyh1, podyh2, podyh3, podyh4, podyh5];
 
@@ -104,7 +113,10 @@ export default function Home() {
 				<Table showActiveColumn={false} />
 			</section>
 
-			<PresentationSection title={t('cottages.presentation.title')} text={t('cottages.presentation.text')} />
+			<PresentationSection
+				title={t("cottages.presentation.title")}
+				text={t("cottages.presentation.text")}
+			/>
 
 			<div className="p-8"></div>
 		</>

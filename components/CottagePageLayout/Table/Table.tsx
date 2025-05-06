@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { cottagesTableData } from "@/data/cottagesPage";
-import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import clsx from "clsx";
 import arrowLeft from "@/public/assets/icons/arrow-left.svg";
 import arrowRight from "@/public/assets/icons/arrow-right.svg";

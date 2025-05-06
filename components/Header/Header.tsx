@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import logo from "@/public/assets/logo.svg";
-import { Link, usePathname } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/navigation";
 import Navbar from "../Navbar/Navbar";
 import { useLocale } from "next-intl";
 

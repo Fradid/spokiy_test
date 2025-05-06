@@ -8,7 +8,7 @@ import pattern from "@/public/assets/patterns/patterns1.svg";
 import open from "@/public/assets/icons/plus-circle.svg";
 import close from "@/public/assets/icons/minus-circle.svg";
 import { useTranslations } from "next-intl";
-import { usePathname } from "@/i18n/routing";
+import { usePathname } from "@/i18n/navigation";
 import { useModal } from "@/context/ModalContext";
 
 const FAQSection = () => {

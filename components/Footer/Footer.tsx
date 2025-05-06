@@ -5,7 +5,7 @@ import React from "react";
 import pattern from "@/public/assets/patterns/11.svg";
 import logo from "@/public/assets/logo.svg";
 import { useTranslations } from "next-intl";
-import { Link, usePathname } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/navigation";
 import ContactItem from "../ContactItem/ContactItem";
 import ContactForm from "../ContactForm/ContactForm";
 

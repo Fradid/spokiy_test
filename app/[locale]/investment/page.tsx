@@ -5,7 +5,6 @@ import ReusableSection from "@/components/ReusableSection/ReusableSection";
 import patternIcon from "@/public/assets/patterns/04.svg";
 import patternLogo from "@/public/assets/patterns/10.svg";
 import { Metadata } from "next";
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import pattern from "@/public/assets/patterns/11.svg";
@@ -20,14 +19,24 @@ export async function generateMetadata({
 	const { locale } = await params;
 	const t = await getTranslations({ locale });
 
+	const baseUrl = "https://spokiy-test.vercel.app"
+
 	return {
 		title: t("investment.metatags.title"),
 		description: t("investment.metatags.description"),
+		alternates: {
+			canonical: `${baseUrl}/${locale}/investment`
+		}
 	};
 }
 
-export default function Home() {
-	const t = useTranslations();
+export default async function Home({
+	params,
+}: {
+	params: Promise<{ locale: string }>;
+}) {
+	const { locale } = await params;
+	const t = await getTranslations({ locale });
 
 	return (
 		<>

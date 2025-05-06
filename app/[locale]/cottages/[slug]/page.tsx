@@ -13,14 +13,19 @@ import { notFound } from "next/navigation";
 export async function generateMetadata({
 	params,
 }: {
-	params: Promise<{ locale: string }>;
+	params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-	const { locale } = await params;
+	const { locale, slug } = await params;
 	const t = await getTranslations({ locale });
+
+	const baseUrl = "https://spokiy-test.vercel.app"
 
 	return {
 		title: t("home.metatags.title"),
 		description: t("home.metatags.description"),
+		alternates: {
+			canonical: `${baseUrl}/${locale}/cottages/${slug}`
+		}
 	};
 }
 

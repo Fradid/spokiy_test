@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
-import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import { useModal } from "@/context/ModalContext";
 import { cottages } from "@/data/cottages";
 import arrowLeft from "@/public/assets/icons/arrow-left.svg";
