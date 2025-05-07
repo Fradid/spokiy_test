@@ -73,14 +73,11 @@ const AboutSection = () => {
 								href="https://maps.app.goo.gl/mHspxA17DuSdXMAc7"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="flex items-center justify-center bg-primary-100 text-white font-CodecPro300 text-sm leading-6 py-2 px-5 w-full text-center hover:bg-primary-80 md:text-base lg:py-3"
+								className="grey-btn"
 							>
 								{t("btnLabel.ourLocation")}
 							</Link>
-							<Link
-								href="/ganplan"
-								className="bg-transparent border border-primary-40 text-primary-90 font-CodecPro300 text-sm leading-6 py-2 px-5 w-full text-center hover:bg-primary-50 hover:border-primary-50 md:text-base lg:py-3"
-							>
+							<Link href="/ganplan" className="transparent-btn border border-primary-40 text-primary-90 hover:bg-primary-50 hover:border-primary-50">
 								{t("btnLabel.viewGenplan")}
 							</Link>
 						</div>

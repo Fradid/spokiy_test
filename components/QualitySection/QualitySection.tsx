@@ -99,11 +99,11 @@ const QualitySection = () => {
 				<Image src={pattern} alt="pattern" className="opacity-20" />
 			</div>
 
-			<div className="mx-auto flex flex-col max-w-6xl justify-around gap-10 sm:flex-row">
+			<div className="bg-primary-100 p-6 sm:p-10 mx-auto flex flex-col sm:max-w-6xl justify-around gap-10 sm:flex-row">
 				{/* Investor List */}
-				<div className="self-end ">
+				<div className="self-end w-full">
 					<h3
-						className="mb-5 font-CodecPro200 leading-[33.6px] text-base md:text-2xl text-gray-100"
+						className="mb-5 font-CodecPro200 leading-[33.6px] text-base md:text-2xl text-gray-30"
 						data-aos="fade-down"
 						data-aos-delay="300"
 					>
@@ -115,8 +115,8 @@ const QualitySection = () => {
 								key={idx}
 								className="flex flex-row-reverse sm:flex-row gap-4 mb-4"
 							>
-								<Image src={liFirst} alt={`bullet point ${idx}`} width={16} />
-								<p className="text-sm md:text-base font-CodecPro300 text-gray-70 leading-6">
+								<Image src={liFirst} alt={`bullet point ${idx}`} className="w-4 h-6" />
+								<p className="text-sm md:text-base font-CodecPro300 text-gray-20 leading-6">
 									{item}
 								</p>
 							</li>
@@ -128,9 +128,9 @@ const QualitySection = () => {
 				<div className="self-stretch w-full h-px sm:h-auto sm:w-px bg-primary-40" />
 
 				{/* Company List */}
-				<div>
+				<div className="w-full">
 					<h3
-						className="mb-5 font-CodecPro200 leading-[33.6px] text-base md:text-2xl text-gray-100"
+						className="mb-5 font-CodecPro200 leading-[33.6px] text-base md:text-2xl text-gray-30"
 						data-aos="fade-down"
 						data-aos-delay="300"
 					>
@@ -140,7 +140,7 @@ const QualitySection = () => {
 						{company[locale].map((item, idx) => (
 							<li key={idx} className="flex gap-4 mb-4">
 								<Image src={liSecond} alt={`bullet point ${idx}`} width={16} />
-								<p className="text-sm md:text-base font-CodecPro300 text-gray-70 leading-6">
+								<p className="text-sm md:text-base font-CodecPro300 text-gray-20 leading-6">
 									{item}
 								</p>
 							</li>

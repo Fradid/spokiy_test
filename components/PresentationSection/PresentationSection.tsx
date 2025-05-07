@@ -46,7 +46,7 @@ const PresentationSection = ({ title, text }: PresentationProps) => {
 							{t("btnText")}
 						</p>
 						<button
-							className="text-white font-CodecPro300 text-sm md:text-base border border-white leading-6 py-3 px-5 w-full text-center hover:bg-primary-80 hover:cursor-pointer"
+							className="transparent-btn text-white border border-white hover:bg-primary-80 hover:cursor-pointer"
 							onClick={() => toggle("presentation")}
 						>
 							{btn("download")}

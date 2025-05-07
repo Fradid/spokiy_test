@@ -171,14 +171,14 @@ const CottagesSlider = () => {
 					data-aos-offset="0"
 				>
 					<button
-						className="bg-primary-100 text-white font-CodecPro300 text-sm md:text-base py-3 px-5 w-full text-center cursor-pointer hover:bg-primary-80"
+						className="grey-btn"
 						onClick={() => toggle("contact")}
 					>
 						{btn("formBtn")}
 					</button>
 					<Link
 						href="/cottages"
-						className="border border-primary-40 text-primary-90 font-CodecPro300 text-sm md:text-base py-3 px-5 w-full text-center hover:bg-primary-50 hover:border-primary-50"
+						className="transparent-btn border border-primary-40 text-primary-90 hover:bg-primary-50 hover:border-primary-50"
 					>
 						{btn("viewAll")}
 					</Link>

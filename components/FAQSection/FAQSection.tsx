@@ -55,7 +55,7 @@ const FAQSection = () => {
 						data-aos="fade-up-left"
 						data-aos-delay="400"
 					>
-						<button className="text-white font-CodecPro300 text-sm md:text-base border border-white leading-6 py-3 px-5 w-full text-center hover:bg-primary-80 hover:cursor-pointer">
+						<button className="transparent-btn text-white border border-white hover:bg-primary-80 hover:cursor-pointer">
 							+380 73 808 11 88
 						</button>
 						<button

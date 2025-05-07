@@ -2,60 +2,64 @@
 
 @theme inline {
 	--color-primary-100: #3f4134;
-  --color-primary-90: #4e5141;
-  --color-primary-80: #6c705a;
-  --color-primary-70: #8a8f73;
-  --color-primary-60: #a4a892;
-  --color-primary-50: #bec1b1;
-  --color-primary-40: #d8dad0;
-  --color-primary-30: #efefe7;
-  --color-primary-20: #f2f3ec;
-  --color-secondary-100: #a3a068;
-  --color-secondary-20: #dadac8;
-  --color-secondary-10: #e7e7da;
-  --color-gray-100: #232323;
-  --color-gray-80: #696969;
-  --color-gray-70: #8c8c8c;
-  --color-gray-60: #afafaf;
-  --color-gray-50: #d2d2d2;
-  --color-gray-40: #e3e3e3;
-  --color-gray-30: #f5f5f5;
-  --color-gray-20: #fafafa;
-  --color-gray-0: #fff;
+	--color-primary-90: #4e5141;
+	--color-primary-80: #6c705a;
+	--color-primary-70: #8a8f73;
+	--color-primary-60: #a4a892;
+	--color-primary-50: #bec1b1;
+	--color-primary-40: #d8dad0;
+	--color-primary-30: #efefe7;
+	--color-primary-20: #f2f3ec;
+	--color-secondary-100: #a3a068;
+	--color-secondary-20: #dadac8;
+	--color-secondary-10: #e7e7da;
+	--color-gray-100: #232323;
+	--color-gray-80: #696969;
+	--color-gray-70: #8c8c8c;
+	--color-gray-60: #afafaf;
+	--color-gray-50: #d2d2d2;
+	--color-gray-40: #e3e3e3;
+	--color-gray-30: #f5f5f5;
+	--color-gray-20: #fafafa;
+	--color-gray-0: #fff;
 	--color-brown: #462212;
-	--color-brown-100: #9A795E;
-	--color-brown-200: #A47D52;
-	--color-brown-300: #BFA68B;
-	--color-brown-400: #ECE3DA;
-	--font-CodecPro200: 'CodecPro200', sans-serif;
-	--font-CodecPro300: 'CodecPro300', sans-serif;
-	--font-CodecPro500: 'CodecPro500', sans-serif;
+	--color-brown-100: #9a795e;
+	--color-brown-200: #a47d52;
+	--color-brown-300: #bfa68b;
+	--color-brown-400: #ece3da;
+	--font-CodecPro200: "CodecPro200", sans-serif;
+	--font-CodecPro300: "CodecPro300", sans-serif;
+	--font-CodecPro500: "CodecPro500", sans-serif;
 }
 
 @font-face {
-  font-family: 'CodecPro200';
-  src: local('CodecPro200'), url(../public/fonts/Codec-Pro-ExtraLight.ttf) format('opentype');
+	font-family: "CodecPro200";
+	src: local("CodecPro200"),
+		url(../public/fonts/Codec-Pro-ExtraLight.ttf) format("opentype");
 }
 
 @font-face {
-  font-family: 'CodecPro300';
-  src: local('CodecPro300'), url(../public/fonts/CodecPro-Light.ttf) format('opentype');
+	font-family: "CodecPro300";
+	src: local("CodecPro300"),
+		url(../public/fonts/CodecPro-Light.ttf) format("opentype");
 }
 
 @font-face {
-  font-family: 'CodecPro500';
-  src: local('CodecPro500'), url(../public/fonts/CodecPro-Bold.ttf) format('opentype');
+	font-family: "CodecPro500";
+	src: local("CodecPro500"),
+		url(../public/fonts/CodecPro-Bold.ttf) format("opentype");
 }
 
-html, body {
-  overscroll-behavior: none;
-  background-color: #f2f3ec;
-  width: 100%;
-  height: 100%;
+html,
+body {
+	overscroll-behavior: none;
+	background-color: #f2f3ec;
+	width: 100%;
+	height: 100%;
 }
 
 .PhoneInputInput {
-  @apply !outline-none px-3 py-2 hover:ring-4 hover:ring-primary-80 transition-all focus:ring-4 focus:ring-primary-80;
+	@apply !outline-none px-3 py-2 hover:ring-4 hover:ring-primary-80 transition-all focus:ring-4 focus:ring-primary-80;
 }
 
 .PhoneInputCountry {
@@ -74,10 +78,26 @@ html, body {
 	@apply !h-2 !w-2 !opacity-100 !mt-[-5px];
 }
 
-.PhoneInputCountrySelect:focus + .PhoneInputCountryIcon + .PhoneInputCountrySelectArrow {
-  color: black !important;
+.PhoneInputCountrySelect:focus
+	+ .PhoneInputCountryIcon
+	+ .PhoneInputCountrySelectArrow {
+	color: black !important;
 }
 
 .customCottageSlider .slick-slide:not(.slick-active) {
 	@apply p-0 md:p-5 lg:py-[60px] lg:px-20;
+}
+
+@layer components {
+	.white-btn {
+		@apply font-CodecPro300 text-sm bg-gray-0/70 hover:bg-gray-0 text-primary-100 py-2 px-5 leading-6 transition md:text-base cursor-pointer lg:py-3;
+	}
+
+	.grey-btn {
+		@apply bg-primary-100 text-white font-CodecPro300 text-sm md:text-base py-3 px-5 w-full text-center cursor-pointer hover:bg-primary-80 transition;
+	}
+
+	.transparent-btn {
+		@apply self-center bg-transparent font-CodecPro300 text-sm leading-6 py-3 px-5 w-full text-center md:text-base transition;
+	}
 }

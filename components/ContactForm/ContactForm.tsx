@@ -191,7 +191,7 @@ const ContactForm = ({
 					<button
 						type="submit"
 						className={clsx(
-							"w-full font-CodecPro300 text-base border border-white py-3 px-5 leading-6 hover:bg-primary-80 transition hover:cursor-pointer",
+							"transparent-btn text-white border border-white hover:bg-primary-80 hover:cursor-pointer",
 							btnModal &&
 								"bg-primary-100 text-white text-center hover:bg-primary-80"
 						)}
