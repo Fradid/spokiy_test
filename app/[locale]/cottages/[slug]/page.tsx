@@ -29,7 +29,7 @@ export async function generateMetadata({
 	};
 }
 
-const locales = ["uk", "en"];
+const locales = ["ua", "en"];
 export async function generateStaticParams() {
 	return locales.flatMap((locale) =>
 		Object.values(cottages).map((cottage) => ({

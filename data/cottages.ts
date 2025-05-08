@@ -73,7 +73,7 @@ export const cottages = {
 			count: "3",
 		},
 	],
-	uk: [
+	ua: [
 		{
 			index: 0,
 			imgUrl: Cottage1,

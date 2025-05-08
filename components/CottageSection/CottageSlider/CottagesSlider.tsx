@@ -16,7 +16,7 @@ import clsx from "clsx";
 const CottagesSlider = () => {
 	const t = useTranslations("sections.cottages");
 	const btn = useTranslations("btnLabel");
-	const locale = useLocale() as "en" | "uk";
+	const locale = useLocale() as "en" | "ua";
 	const cottageList = cottages[locale];
 	const { toggle } = useModal();
 

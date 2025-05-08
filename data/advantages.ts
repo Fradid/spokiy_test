@@ -31,7 +31,7 @@ export const advantages = {
 				"Lehit cottages are located on the banks of the Stryi River, within a renowned balneological resort. Surrounded by pine forests, they offer breathtaking panoramic views of the Carpathian Mountains.",
 		},
 	],
-	uk: [
+	ua: [
 		{
 			title: "Вигідне капіталовкладення",
 			content:

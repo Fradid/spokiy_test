@@ -29,7 +29,7 @@ const stats = [
 
 const QualitySection = () => {
 	const t = useTranslations("sections.quality");
-	const locale = useLocale() as "en" | "uk";
+	const locale = useLocale() as "en" | "ua";
 
 	return (
 		<section className="p-6 md:px-14">

@@ -99,7 +99,7 @@ export const infrastructure = {
 			title: 'Creative workshop',
 			description:
 				'Here you can touch traditional and contemporary art by trying your hand at painting, making jewelry, or sculpting pottery.',
-			additionalText: 'And the list is endless, because creating beauty with your hands is a good tradition of Ukrainians.',
+			additionalText: 'And the list is endless, because creating beauty with your hands is a good tradition of uarainians.',
 			imageUrl: Image10,
 		},
 		{
@@ -128,7 +128,7 @@ export const infrastructure = {
 			imageUrl: Image13,
 		},
 	],
-	uk: [
+	ua: [
 		{
 			id: 1,
 			step: '01',

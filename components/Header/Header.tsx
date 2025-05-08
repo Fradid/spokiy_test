@@ -27,7 +27,7 @@ const Header = () => {
 			<div className="flex flex-row-reverse items-center gap-6 lg:flex-row">
 				<Navbar />
 				<div className="flex gap-3 text-lg font-CodecPro200 text-gray-70 leading-[18px]">
-					{["uk", "en"].map((lang) => (
+					{["ua", "en"].map((lang) => (
 						<Link
 							key={lang}
 							href={pathname}

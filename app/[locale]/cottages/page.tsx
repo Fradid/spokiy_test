@@ -53,6 +53,7 @@ export default async function Home({
 				description={t("cottages.main.description")}
 				btnLabel={t("btnLabel.openGenplan")}
 				bgClass="bg-[url('/assets/Hero.png')]"
+				genplan
 			/>
 
 			<section className="max-w-6xl flex flex-col md:flex-row gap-6 md:gap-0 mx-auto p-10 md:p-14">

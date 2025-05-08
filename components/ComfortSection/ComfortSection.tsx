@@ -7,7 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 
 const ComfortSection = () => {
 	const t = useTranslations("cottages.comfort");
-	const locale = useLocale() as "en" | "uk";
+	const locale = useLocale() as "en" | "ua";
 
 	return (
 		<section className="p-10 sm:p-14 bg-gray-100">

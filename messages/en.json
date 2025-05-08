@@ -32,6 +32,10 @@
 			"description": "Investing your cash assets in real estate in the Carpathians will provide you with monthly passive income and a place to relax without unnecessary worries."
 		}
 	},
+	"genplan": {
+		"title": "Lehit recreation complex general planning | The master plan of cottages",
+		"description": "Discover the master plan of the Lehit cottage town in Skhidnytsia. 3D layout of the cottages and the territory of the complex."
+	},
 	"navbar": {
 		"cottages": "Cottages",
 		"investment": "Investments",

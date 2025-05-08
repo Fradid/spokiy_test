@@ -19,7 +19,7 @@ interface AccordionProps {
 	children?: React.ReactNode;
 	data: {
 		en: AccordionItem[];
-		uk: AccordionItem[];
+		ua: AccordionItem[];
 	};
 	title?: string;
 	defaultOpenIndexes?: number[];
@@ -41,7 +41,7 @@ export default function Accordion({
 	closeIcon = defaultMinus,
 	faqMode = false,
 }: AccordionProps) {
-	const locale = useLocale() as "en" | "uk";
+	const locale = useLocale() as "en" | "ua";
 	const items = data[locale] || [];
 
 	const [openIndexes, setOpenIndexes] = useState<number[]>(defaultOpenIndexes);

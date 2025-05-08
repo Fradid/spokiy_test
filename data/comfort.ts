@@ -9,24 +9,24 @@ const baseComfortItems = [
 	{
 		icon: firstBullet,
 		en: "A profitable investment",
-		uk: "Вигідна інвестиція",
+		ua: "Вигідна інвестиція",
 	},
 	{
 		icon: secondBullet,
 		en: "A place for relaxation",
-		uk: "Місце для відпочинку",
+		ua: "Місце для відпочинку",
 	},
-	{ icon: thirdBullet, en: "Modern technologies", uk: "Сучасні технології" },
+	{ icon: thirdBullet, en: "Modern technologies", ua: "Сучасні технології" },
 	{
 		icon: fourthBullet,
 		en: "Ecological materials",
-		uk: "Екологічні матеріали",
+		ua: "Екологічні матеріали",
 	},
-	{ icon: fifthBullet, en: "Ergonomic planning", uk: "Ергономічне планування" },
-	{ icon: sixthBullet, en: "Designer interior", uk: "Дизайнерський інтер’єр" },
+	{ icon: fifthBullet, en: "Ergonomic planning", ua: "Ергономічне планування" },
+	{ icon: sixthBullet, en: "Designer interior", ua: "Дизайнерський інтер’єр" },
 ];
 
 export const comfort = {
 	en: baseComfortItems.map(({ icon, en }) => ({ icon, text: en })),
-	uk: baseComfortItems.map(({ icon, uk }) => ({ icon, text: uk })),
+	ua: baseComfortItems.map(({ icon, ua }) => ({ icon, text: ua })),
 };

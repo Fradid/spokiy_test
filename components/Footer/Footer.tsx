@@ -50,6 +50,10 @@ const Footer = () => {
 		{
 			label: t("contactsLabels.sales"),
 			value: t("salesAddress"),
+			link: {
+				href: "https://maps.app.goo.gl/2vtoy78QBBSqo1Zm8",
+				text: btn("ourLocation"),
+			},
 		},
 	];
 

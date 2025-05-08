@@ -35,7 +35,7 @@ export const questions = {
 				"Yes, investors have priority booking rights for their own or any available cottage, for up to 21 days per year.",
 		},
 	],
-	uk: [
+	ua: [
 		{
 			title: "Де знаходяться котеджі Легіт?",
 			content:
@@ -101,7 +101,7 @@ export const investmentQuestions = {
         'Yes. At any convenient time, investors can access all legal and reporting documentation. Also, each investor receives a weekly workload report.',
     },
 	],
-	uk: [
+	ua: [
 		{
       title: 'Який орієнтовний дохід можна отримати від інвестицій у котедж?',
       content: 'Щорічний пасивний дохід від інвестиції складає 11 %, а щомісячний прибуток становить до 2000 $.',

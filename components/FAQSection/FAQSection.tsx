@@ -55,7 +55,10 @@ const FAQSection = () => {
 						data-aos="fade-up-left"
 						data-aos-delay="400"
 					>
-						<button className="transparent-btn text-white border border-white hover:bg-primary-80 hover:cursor-pointer">
+						<button
+							className="transparent-btn text-white border border-white hover:bg-primary-80 hover:cursor-pointer"
+							onClick={() => (window.location.href = "tel:+380738081188")}
+						>
 							+380 73 808 11 88
 						</button>
 						<button

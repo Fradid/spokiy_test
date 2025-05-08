@@ -1,6 +1,7 @@
 "use client";
 
 import { useModal } from "@/context/ModalContext";
+import { Link } from "@/i18n/navigation";
 import React from "react";
 
 interface MainBlockProps {
@@ -8,6 +9,7 @@ interface MainBlockProps {
 	description: string;
 	btnLabel: string;
 	bgClass: string;
+	genplan?: boolean;
 }
 
 const MainBlock = ({
@@ -15,13 +17,14 @@ const MainBlock = ({
 	description,
 	btnLabel,
 	bgClass,
+	genplan = false,
 }: MainBlockProps) => {
 	const { toggle } = useModal();
 
 	return (
 		<section
 			id="main"
-			className={`w-full h-[80%] ${bgClass} bg-cover bg-center bg-no-repeat flex flex-col items-center pt-28 sm:pt-[150px] px-8 lg:px-10 lg:h-[60.6vw]`}
+			className={`w-full h-[80%] ${bgClass} bg-cover ${genplan ? "bg-bottom" : "bg-center"} bg-no-repeat flex flex-col items-center pt-28 sm:pt-[150px] px-8 lg:px-10 lg:h-[60.6vw]`}
 		>
 			<article
 				data-aos="fade-down"
@@ -43,12 +46,15 @@ const MainBlock = ({
 				data-aos-duration="300"
 				data-aos-offset="0"
 			>
-				<button
-					className="white-btn"
-					onClick={() => toggle("contact")}
-				>
-					{btnLabel}
-				</button>
+				{!genplan ? (
+					<button className="white-btn" onClick={() => toggle("contact")}>
+						{btnLabel}
+					</button>
+				) : (
+					<Link href="/ganplan" className="white-btn py-4">
+						{btnLabel}
+					</Link>
+				)}
 			</div>
 		</section>
 	);

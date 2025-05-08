@@ -16,11 +16,11 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Зовнішні та внутрішні стіни:",
+							ua: "Зовнішні та внутрішні стіни:",
 							en: "External and internal walls:",
 						},
 						span: {
-							uk: "цегла",
+							ua: "цегла",
 							en: "brick",
 						},
 					},
@@ -30,16 +30,16 @@ export const exterior = [
 				key: "thickness",
 				items: [
 					{
-						title: { uk: "Зовнішні стіни:", en: "External walls:" },
+						title: { ua: "Зовнішні стіни:", en: "External walls:" },
 						span: {
-							uk: "250/380 мм",
+							ua: "250/380 мм",
 							en: "250/380 mm",
 						},
 					},
 					{
-						title: { uk: "Внутрішні перегородки:", en: "Internal partitions:" },
+						title: { ua: "Внутрішні перегородки:", en: "Internal partitions:" },
 						span: {
-							uk: "120 мм",
+							ua: "120 мм",
 							en: "120 mm",
 						},
 					},
@@ -49,9 +49,9 @@ export const exterior = [
 				key: "thermal",
 				items: [
 					{
-						title: { uk: "Мінеральна вата:", en: "Mineral wool:" },
+						title: { ua: "Мінеральна вата:", en: "Mineral wool:" },
 						span: {
-							uk: "100-150 мм",
+							ua: "100-150 мм",
 							en: "100–150 mm",
 						},
 					},
@@ -62,7 +62,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Металеві панелі на системі «клік-фальц», дерев’яний гонт, дошка планкен (модрина)",
+							ua: "Металеві панелі на системі «клік-фальц», дерев’яний гонт, дошка планкен (модрина)",
 							en: "Metal panels on the click-fastening system, wooden shingles, plancken board (larch)",
 						},
 					},
@@ -78,7 +78,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Двоскатна, дерев’яні крокви",
+							ua: "Двоскатна, дерев’яні крокви",
 							en: "Gable, wooden rafters",
 						},
 					},
@@ -89,7 +89,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Металеві панелі на системі «клік-фальц»",
+							ua: "Металеві панелі на системі «клік-фальц»",
 							en: "Metal panels on a click-fastening system",
 						},
 					},
@@ -100,7 +100,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Гідроізоляційна плівка",
+							ua: "Гідроізоляційна плівка",
 							en: "Waterproofing film",
 						},
 					},
@@ -111,7 +111,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Мінеральна вата",
+							ua: "Мінеральна вата",
 							en: "Mineral wool",
 						},
 					},
@@ -127,7 +127,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Алюмінієвий профіль, енергоефективний склопакет",
+							ua: "Алюмінієвий профіль, енергоефективний склопакет",
 							en: "Aluminium profile, energy efficient double glazing",
 						},
 					},
@@ -138,7 +138,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "МДФ",
+							ua: "МДФ",
 							en: "MDF",
 						},
 					},
@@ -154,7 +154,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Електричний стельовий конвектор, кондиціонер, камін",
+							ua: "Електричний стельовий конвектор, кондиціонер, камін",
 							en: "Electric ceiling convector, air conditioning, fireplace",
 						},
 					},
@@ -165,7 +165,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Колодязь",
+							ua: "Колодязь",
 							en: "Well",
 						},
 					},
@@ -176,7 +176,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Септик",
+							ua: "Септик",
 							en: "Septic tank",
 						},
 					},
@@ -187,7 +187,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Центральна мережа + резервне джерело живлення",
+							ua: "Центральна мережа + резервне джерело живлення",
 							en: "Central network + backup power supply",
 						},
 					},
@@ -203,7 +203,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Декоративна штукатурка, дерев'яна вагонка, керамограніт",
+							ua: "Декоративна штукатурка, дерев'яна вагонка, керамограніт",
 							en: "Decorative plaster, wooden siding, porcelain stoneware",
 						},
 					},
@@ -214,7 +214,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Дерев'яна вагонка",
+							ua: "Дерев'яна вагонка",
 							en: "Wooden lining",
 						},
 					},
@@ -225,7 +225,7 @@ export const exterior = [
 				items: [
 					{
 						title: {
-							uk: "Паркетна дошка",
+							ua: "Паркетна дошка",
 							en: "Parquet board",
 						},
 					},

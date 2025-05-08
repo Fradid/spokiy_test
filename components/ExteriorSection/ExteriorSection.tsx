@@ -8,7 +8,7 @@ import { exterior } from "@/data/exterior";
 
 const ExteriorSection = () => {
 	const t = useTranslations("cottages.exterior");
-	const locale = useLocale() as "uk" | "en"; // either "uk" or "en"
+	const locale = useLocale() as "ua" | "en"; // either "uk" or "en"
 
 	const labelStyle =
 		"font-CodecPro300 text-gray-70 text-base py-4 lg:py-10 md:w-1/4";

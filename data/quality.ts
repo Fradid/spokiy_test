@@ -9,7 +9,7 @@ export const investor = {
 		"A place for your relaxation",
 		"Ground and house maintenance",
 	],
-	uk: [
+	ua: [
 		"Право власності на котедж та земельну ділянку",
 		"Готовий бізнес",
 		"Зростання вартості нерухомості",
@@ -32,7 +32,7 @@ export const company = {
 		"Cottage maintenance",
 		"Interaction with visitors",
 	],
-	uk: [
+	ua: [
 		"Професійне управління капіталом",
 		"Розподіл активів",
 		"Юридичну підтримку",

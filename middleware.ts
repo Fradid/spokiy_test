@@ -18,5 +18,5 @@ export default createMiddleware(routing);
 // }
 
 export const config = {
-  matcher: ['/', '/(uk|en)', '/(uk|en)/:path*']
+  matcher: ['/', '/(ua|en)', '/(ua|en)/:path*']
 };

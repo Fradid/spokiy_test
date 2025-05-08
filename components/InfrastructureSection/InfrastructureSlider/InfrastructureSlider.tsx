@@ -9,7 +9,7 @@ import SlideContent from "@/components/SlideContent/SlideContent";
 import ArrowControls from "@/components/ArrowControls/ArrowControls";
 
 const InfrastructureSlider = () => {
-	const locale = useLocale() as "en" | "uk";
+	const locale = useLocale() as "en" | "ua";
 	const infrastructureList = infrastructure[locale];
 	const [carouselIndex, setCarouselIndex] = useState(0);
 	const sliderRef = useRef<Slider | null>(null);
