@@ -9,6 +9,7 @@ import pattern from "@/public/assets/patterns/03.svg";
 import patternAcc from "@/public/assets/patterns/16.svg";
 import patternIcon from "@/public/assets/patterns/04.svg";
 import patternLogo from "@/public/assets/patterns/10.svg";
+import patternInf from "@/public/assets/patterns/08.svg";
 import InfrastructureSection from "@/components/InfrastructureSection/InfrastructureSection";
 import Accordion from "@/components/Accordion/Accordion";
 import { advantages } from "@/data/advantages";
@@ -26,13 +27,18 @@ export async function generateMetadata({
 	const { locale } = await params;
 	const t = await getTranslations({ locale });
 
-	const baseUrl = "https://spokiy-test.vercel.app";
+	const baseUrl = "https://lehit-village.com";
 
 	return {
 		title: t("home.metatags.title"),
 		description: t("home.metatags.description"),
 		alternates: {
 			canonical: `${baseUrl}/${locale}`,
+			languages: {
+				uk: `${baseUrl}/ua`,
+				en: `${baseUrl}/en`,
+				"x-default": baseUrl,
+			},
 		},
 	};
 }
@@ -128,7 +134,10 @@ export default async function Home({
 				</div>
 			</section>
 
-			<InfrastructureSection />
+			<InfrastructureSection
+				title={t("sections.infrastructure.title")}
+				img={patternInf}
+			/>
 
 			<section id="advantages">
 				<div className="flex flex-col items-center pt-14 h-[700px] lg:h-[819px] bg-[url('/assets/treasures-bg.jpg')] bg-bottom bg-no-repeat bg-cover relative">

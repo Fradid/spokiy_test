@@ -18,13 +18,18 @@ export async function generateMetadata({
 	const { locale, slug } = await params;
 	const t = await getTranslations({ locale });
 
-	const baseUrl = "https://spokiy-test.vercel.app";
+	const baseUrl = "https://lehit-village.com";
 
 	return {
 		title: t("home.metatags.title"),
 		description: t("home.metatags.description"),
 		alternates: {
 			canonical: `${baseUrl}/${locale}/cottages/${slug}`,
+			languages: {
+				uk: `${baseUrl}/ua/cottages/${slug}`,
+				en: `${baseUrl}/en/cottages/${slug}`,
+				"x-default": `${baseUrl}/cottages/${slug}`,
+			},
 		},
 	};
 }

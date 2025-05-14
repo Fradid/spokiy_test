@@ -16,6 +16,7 @@ import podyh2 from "@/public/assets/images/podyh/2.webp";
 import podyh3 from "@/public/assets/images/podyh/3.webp";
 import podyh4 from "@/public/assets/images/podyh/4.webp";
 import podyh5 from "@/public/assets/images/podyh/5.webp";
+import Section from "@/components/Section/Section";
 
 export async function generateMetadata({
 	params,
@@ -25,13 +26,18 @@ export async function generateMetadata({
 	const { locale } = await params;
 	const t = await getTranslations({ locale });
 
-	const baseUrl = "https://spokiy-test.vercel.app";
+	const baseUrl = "https://lehit-village.com";
 
 	return {
 		title: t("cottages.metatags.title"),
 		description: t("cottages.metatags.description"),
 		alternates: {
 			canonical: `${baseUrl}/${locale}/cottages`,
+			languages: {
+				uk: `${baseUrl}/ua/cottages`,
+				en: `${baseUrl}/en/cottages`,
+				"x-default": `${baseUrl}/cottages`,
+			},
 		},
 	};
 }
@@ -56,27 +62,7 @@ export default async function Home({
 				genplan
 			/>
 
-			<section className="max-w-6xl flex flex-col md:flex-row gap-6 md:gap-0 mx-auto p-10 md:p-14">
-				<div
-					className="w-full flex gap-4 items-start"
-					data-aos="fade-up-right"
-					data-aos-easing="linear"
-					data-aos-duration="300"
-				>
-					<Image src={pattern} alt="pattern" width={21} />
-					<h2 className="text-base leading-5 uppercase text-gray-100 font-CodecPro500 md:text-2xl lg:leading-6">
-						{t("cottages.section.title")}
-					</h2>
-				</div>
-				<p
-					className="w-full font-CodecPro300 text-xs text-gray-70 leading-5 md:text-base lg:leading-6"
-					data-aos="fade-down-left"
-					data-aos-easing="linear"
-					data-aos-duration="300"
-				>
-					{t("cottages.section.description")}
-				</p>
-			</section>
+			<Section title={t('cottages.section.title')} description={t('cottages.section.description')} img={pattern} />
 
 			<section className="flex flex-col">
 				<div className="relative flex flex-col gap-4 max-w-sm px-4 sm:max-w-lg md:max-w-2xl mx-auto py-8 md:py-14">
@@ -115,7 +101,7 @@ export default async function Home({
 					</Link>
 				</div>
 				<div
-					className="w-full h-screen bg-[url('/assets/cottagesSection.png')] bg-cover bg-center bg-no-repeat"
+					className="w-full h-[40vh] sm:h-[70vh] md:h-[80vh] lg:h-screen bg-[url('/assets/cottagesSection.png')] bg-center bg-no-repeat bg-contain sm:bg-cover"
 					data-aos="fade-zoom-in"
 					data-aos-easing="ease-in-back"
 					data-aos-duration="800"

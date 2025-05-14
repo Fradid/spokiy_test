@@ -1,22 +1,43 @@
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 import createMiddleware from 'next-intl/middleware';
 import { routing } from './i18n/routing';
 
-export default createMiddleware(routing);
+function detectLocale(request: NextRequest): 'ua' | 'en' {
+  // 1. Check cookie
+  const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value as 'ua' | 'en' | undefined;
+  if (cookieLocale && routing.locales.includes(cookieLocale)) {
+    return cookieLocale;
+  }
 
-// const intlMiddleware = createMiddleware(routing);
+  // 2. Check Accept-Language header
+  const acceptLang = request.headers.get('accept-language');
+  if (acceptLang) {
+    const accepted = acceptLang.split(',').map(l => l.split(';')[0].trim());
+    for (const lang of accepted) {
+      if (routing.locales.includes(lang as 'ua' | 'en')) {
+        return lang as 'ua' | 'en';
+      }
+    }
+  }
 
-// export default function middleware(request) {
-//   const { pathname } = request.nextUrl;
+  // 3. Fallback
+  return routing.defaultLocale;
+}
 
-//   // Redirect /uk and /uk/* to default root (/)
-//   if (pathname === '/uk' || pathname.startsWith('/uk/')) {
-//     const newPathname = pathname.replace(/^\/uk/, '') || '/';
-//     return NextResponse.redirect(new URL(newPathname, request.url));
-//   }
+export function middleware(request: NextRequest) {
+  const locale = detectLocale(request);
 
-//   return intlMiddleware(request);
-// }
+  const response = createMiddleware(routing)(request);
+
+  // Set cookie if missing
+  if (!request.cookies.get('NEXT_LOCALE')) {
+    response.cookies.set('NEXT_LOCALE', locale, { path: '/' });
+  }
+
+  return response;
+}
 
 export const config = {
-  matcher: ['/', '/(ua|en)', '/(ua|en)/:path*']
+  matcher: ['/', '/(ua|en)/:path*'],
 };

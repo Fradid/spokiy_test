@@ -1,11 +1,5 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import { setRequestLocale } from "next-intl/server";
-
-export const metadata: Metadata = {
-	title: "Something we need to write",
-	description: "Description we need",
-};
 
 export async function generateStaticParams() {
 	return [{ locale: "ua" }, { locale: "en" }];

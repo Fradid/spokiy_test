@@ -10,13 +10,18 @@ export async function generateMetadata({
 	const { locale } = await params;
 	const t = await getTranslations({ locale });
 
-	const baseUrl = "https://spokiy-test.vercel.app";
+	const baseUrl = "https://lehit-village.com";
 
 	return {
 		title: t("ganplan.metatags.title"),
 		description: t("ganplan.metatags.description"),
 		alternates: {
 			canonical: `${baseUrl}/${locale}/ganplan`,
+			languages: {
+				uk: `${baseUrl}/ua/ganplan`,
+				en: `${baseUrl}/en/ganplan`,
+				"x-default": `${baseUrl}/ganplan`,
+			},
 		},
 	};
 }
