@@ -28,7 +28,7 @@ const Footer = () => {
 		"dyvo",
 	];
 
-	const menu = ["cottages", "investment"];
+	const menu = ["cottages", "investment", "location"];
 
 	const contactItems = [
 		{

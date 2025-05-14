@@ -34,20 +34,28 @@ const cottagesSections = [
 	"showAll",
 ];
 
-const contactItems = [
-	{ label: "+380 73 808 11 88", copyText: "+380738081188" },
-	{ label: "sales@lehit-village.com", copyText: "sales@lehit-village.com" },
-	{ label: "Instagram", href: "https://www.instagram.com/lehit.village" },
-	{
-		label: "Facebook",
-		href: "https://www.facebook.com/profile.php?id=61564299561261",
-	},
-];
-
 const Navbar = () => {
 	const t = useTranslations("navbar");
 	const ct = useTranslations("cottages");
 	const { toggle } = useModal();
+
+	const contactItems = [
+		{ label: "+380 73 808 11 88", copyText: "+380738081188" },
+		{ label: "sales@lehit-village.com", copyText: "sales@lehit-village.com" },
+		{ label: "Instagram", href: "https://www.instagram.com/lehit.village" },
+		{
+			label: "Facebook",
+			href: "https://www.facebook.com/profile.php?id=61564299561261",
+		},
+		{
+			label: t("location"),
+			href: "https://maps.app.goo.gl/mHspxA17DuSdXMAc7",
+		},
+		{
+			label: t("sales"),
+			href: "https://maps.app.goo.gl/2vtoy78QBBSqo1Zm8",
+		},
+	];
 
 	const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 	const [expandedSection, setExpandedSection] = useState<string | null>(null);
@@ -55,6 +63,7 @@ const Navbar = () => {
 	const menuItems = [
 		{ name: t("cottages"), dropdownKey: "cottages" },
 		{ name: t("investment"), href: "/investment" },
+		{ name: t("location"), href: "/location" },
 		{ name: t("presentation"), isButton: true, icon: downloadIcon },
 		{ name: t("contacts"), dropdownKey: "contacts" },
 	];
@@ -98,7 +107,11 @@ const Navbar = () => {
 				className="py-4 pl-4 pr-3 hover:bg-primary-30 cursor-pointer"
 			>
 				<Link
-					href={key === "showAll" ? "/cottages" : `/cottages/${key.replace("-", ".")}`}
+					href={
+						key === "showAll"
+							? "/cottages"
+							: `/cottages/${key.replace("-", ".")}`
+					}
 					onClick={() => setMobileMenuOpen(false)}
 				>
 					<div className="flex flex-col gap-1">
@@ -210,7 +223,11 @@ const Navbar = () => {
 											{cottagesSections.map((key) => (
 												<li key={key}>
 													<Link
-														href={key === "showAll" ? "/cottages" : `/cottages/${key.replace("-", ".")}`}
+														href={
+															key === "showAll"
+																? "/cottages"
+																: `/cottages/${key.replace("-", ".")}`
+														}
 														onClick={() => setMobileMenuOpen(false)}
 														className="flex justify-between"
 													>

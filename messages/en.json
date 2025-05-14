@@ -38,11 +38,39 @@
 			"description": "Discover the master plan of the Lehit cottage town in Skhidnytsia. 3D layout of the cottages and the territory of the complex."
 		}
 	},
+	"location": {
+		"metatags": {
+			"title": "Carpathian cottages by the river | Mountain house from Lehit",
+			"description": "Lehit Recreation Complex offers a wide range of cozy cottages with stunning river views. Nestled in the heart of the Carpathian forest, our houses provide the perfect escape to relax and recharge."
+		},
+		"main": {
+			"title": "Lehit complex location",
+			"description": "The Lehit recreation complex is located at the foothills of the Carpathians, in the picturesque village of Skhidnytsia. Clean mountain air, pine forests, and the absence of industrial facilities create a unique and healing microclimate here."
+		},
+		"section": {
+			"title": "Lehit Complex - Surrounded by Untouched Carpathian Nature",
+			"description": "A riverside house with views of the forest and mountains is a dream vacation. Here, the air is filled with the scent of pine, and the gentle sound of the mountain river brings a sense of peace and harmony. We will gladly help you choose a cottage that meets all your preferences and becomes a smart investment."
+		},
+		"presentation": {
+			"title": "Discover Investment Opportunities in Lehit Cottages",
+			"text": "By filling out the form, you will receive a PDF brochure with a full presentation of the cottages. Inside, you can explore the location, review detailed floor plans, and learn more about investment conditions."
+		},
+		"slider": {
+			"title": "Discover the Surrounding Attractions"
+		},
+		"map": {
+			"title": "A Location That Inspires: The Silence of the Carpathians and the Beauty of Nature",
+			"header": "Once you visit this place, you’ll definitely want to come back again.",
+			"text": "Evergreen spruces, mineral springs, and a convenient location offer great potential for tourism development. This is a place where it’s easy to restore your energy while enjoying birdsong and beautiful landscapes."
+		}
+	},
 	"navbar": {
 		"cottages": "Cottages",
 		"investment": "Investments",
 		"presentation": "Presentation",
-		"contacts": "Contact Us"
+		"contacts": "Contact Us",
+		"location": "Complex location",
+		"sales": "Sales Department"
 	},
 	"cottages": {
 		"metatags": {
@@ -132,7 +160,8 @@
 		"formBtn": "Leave a request",
 		"viewAll": "View all",
 		"download": "Download PDF presentation",
-		"calculate": "Calculate the cost"
+		"calculate": "Calculate the cost",
+		"openGoogleMaps": "Open in Google Maps"
 	},
 	"footer": {
 		"title": "Welcome to the Lehit cottage complex",

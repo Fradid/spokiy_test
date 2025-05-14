@@ -98,7 +98,7 @@ const CottagesSlider = () => {
 						onClick={onClick}
 						disabled={disabled}
 						className={clsx(
-							"lg:absolute lg:top-[550px] transition-opacity",
+							"lg:absolute lg:top-[360px] transition-opacity",
 							position === "left" ? "lg:left-7" : "lg:right-7",
 							disabled
 								? "opacity-30 cursor-default"
