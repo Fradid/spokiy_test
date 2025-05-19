@@ -63,7 +63,8 @@ const Navbar = () => {
 	const menuItems = [
 		{ name: t("cottages"), dropdownKey: "cottages" },
 		{ name: t("investment"), href: "/investment" },
-		{ name: t("location"), href: "/location" },
+		{ name: t("locations"), href: "/location" },
+		{ name: t("infrastructure"), href: "/infrastructure" },
 		{ name: t("presentation"), isButton: true, icon: downloadIcon },
 		{ name: t("contacts"), dropdownKey: "contacts" },
 	];
@@ -251,6 +252,20 @@ const Navbar = () => {
 									onClick={() => setMobileMenuOpen(false)}
 								>
 									{t("investment")}
+								</Link>
+
+								<Link
+									href="/location"
+									onClick={() => setMobileMenuOpen(false)}
+								>
+									{t("locations")}
+								</Link>
+
+								<Link
+									href="/infrastructure"
+									onClick={() => setMobileMenuOpen(false)}
+								>
+									{t("infrastructure")}
 								</Link>
 
 								<button

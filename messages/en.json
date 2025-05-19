@@ -64,13 +64,35 @@
 			"text": "Evergreen spruces, mineral springs, and a convenient location offer great potential for tourism development. This is a place where it’s easy to restore your energy while enjoying birdsong and beautiful landscapes."
 		}
 	},
+	"infrastructure": {
+		"metatags": {
+			"title": "Lehit Retreat: Nature, Comfort & Wellness in the Carpathians",
+			"description": "Relax by the Stryi River at Lehit - a Carpathian retreat with chill zones, spa, mountain views, eco-farming, family fun, gourmet dining, and mindful experiences."
+		},
+		"main": {
+			"title": "A Place Where Nature Meets Comfort",
+			"description": "Tranquility Among the Pines: Zones for Relaxation, Silence, and Inner Balance. The Lehit recreational complex is located on the banks of the mountain river Stryi, next to a pine forest, with stunning views of the Carpathian Mountains. Next to the cottages, you’ll find chill-out zones for outdoor relaxation. Here, you can comfortably settle in to enjoy a book, rest in a hammock to the sound of birds and the river, admire the mountain views, or simply spend time alone with your thoughts."
+		},
+		"section": {
+			"first": "Lehit for Gatherings and Taste: An Atmosphere That Inspires",
+			"second": "Lehit Self-Care: Strength, Recovery, and Wellbeing",
+			"third": "Lehit: A Space for Inspiration, Inner Peace, and Sincere Moments",
+			"fourth": "Lehit for the Whole Family: A Space for Play, Inspiration, and Comfort"
+		},
+		"activities": {
+			"title": "Worry-Free Activities: We’ll Take Care of Everything – You Just Enjoy",
+			"text": "For those who seek an active holiday, we offer exciting trails for cyclists. Feel the unique energy of the Carpathians as you ride through mountain forests and picturesque meadows. We’ll gladly organize mountain bike rides for you, creating unforgettable memories. This is a holiday that energizes and fills you with positive emotions. We’ll handle the safety, provide instructions, and offer all the necessary equipment."
+		}
+	},
 	"navbar": {
 		"cottages": "Cottages",
 		"investment": "Investments",
 		"presentation": "Presentation",
 		"contacts": "Contact Us",
 		"location": "Complex location",
-		"sales": "Sales Department"
+		"sales": "Sales Department",
+		"locations": "Location",
+		"infrastructure": "Infrastructure"
 	},
 	"cottages": {
 		"metatags": {

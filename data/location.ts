@@ -1,9 +1,9 @@
-import Image1 from "@/public/assets/images/location/skole.png";
-import Image2 from "@/public/assets/images/location/kutoghir.png";
-import Image3 from "@/public/assets/images/location/mountain.png";
-import Image4 from "@/public/assets/images/location/bukovitsya.png";
-import Image5 from "@/public/assets/images/location/sopit.png";
-import Image6 from "@/public/assets/images/location/tustan.png";
+import Image1 from "@/public/assets/images/location/skole.jpeg";
+import Image2 from "@/public/assets/images/location/kutoghir.jpg";
+import Image3 from "@/public/assets/images/location/mountain.avif";
+import Image4 from "@/public/assets/images/location/bukovitsya.jpg";
+import Image5 from "@/public/assets/images/location/sopit.jpeg";
+import Image6 from "@/public/assets/images/location/tustan.jpeg";
 
 export const locations = {
 	en: [

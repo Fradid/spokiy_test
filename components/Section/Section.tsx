@@ -10,7 +10,7 @@ interface SectionProps {
 
 const Section = ({ title, description, img }: SectionProps) => {
 	return (
-		<section className="max-w-6xl flex flex-col md:flex-row gap-6 md:gap-0 mx-auto p-10 md:p-14">
+		<section className="max-w-6xl flex flex-col md:flex-row gap-6 md:gap-5 mx-auto p-10 md:p-14">
 			<div
 				className="w-full flex gap-4 items-start"
 				data-aos="fade-up-right"

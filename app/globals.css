@@ -30,6 +30,7 @@
 	--font-CodecPro200: "CodecPro200", sans-serif;
 	--font-CodecPro300: "CodecPro300", sans-serif;
 	--font-CodecPro500: "CodecPro500", sans-serif;
+	--font-CodecPro: "CodecPro", sans-serif;
 }
 
 @font-face {
@@ -48,6 +49,12 @@
 	font-family: "CodecPro500";
 	src: local("CodecPro500"),
 		url(../public/fonts/CodecPro-Bold.ttf) format("opentype");
+}
+
+@font-face {
+	font-family: "CodecPro";
+	src: local("CodecPro"),
+		url(../public/fonts/CodecPro-Regular.ttf) format("opentype");
 }
 
 html,

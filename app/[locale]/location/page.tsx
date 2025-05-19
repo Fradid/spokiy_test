@@ -10,6 +10,7 @@ import patternInf from "@/public/assets/patterns/14.svg";
 import Image from "next/image";
 import { around, mapLocations } from "@/data/map";
 import Link from "next/link";
+import clsx from "clsx";
 
 export async function generateMetadata({
 	params,
@@ -59,7 +60,7 @@ export default async function Home({
 				img={pattern}
 			/>
 
-			<section className="relative w-full bg-[url('/assets/map.webp')] h-[1260px] md:h-[1236px] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center">
+			<section className="relative w-full bg-[url('/assets/map.webp')] h-[1560px] md:h-[1236px] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center">
 				<div className="absolute top-0 left-0 z-3 w-full h-[70%] bg-[linear-gradient(180deg,_#131313_0%,_rgba(19,_19,_19,_0)_100%)]" />
 
 				<div className="absolute top-0 right-0 z-2 w-1/2 h-full bg-[linear-gradient(270deg,_#131313_0%,_rgba(19,_19,_19,_0)_100%)]" />
@@ -101,11 +102,6 @@ export default async function Home({
 											<p className="font-CodecPro500 text-xs md:text-base leading-6 text-white">
 												{point.title}
 											</p>
-											{point.distance && (
-												<p className="font-CodecPro300 text-xs md:text-sm leading-6 text-primary-60">
-													{point.distance}
-												</p>
-											)}
 										</div>
 									</div>
 								</div>
@@ -118,7 +114,7 @@ export default async function Home({
 							href="https://maps.app.goo.gl/mHspxA17DuSdXMAc7"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="transparent-btn text-white border border-white hover:bg-primary-80 hover:cursor-pointer"
+							className="transparent-btn py-4 text-white border border-white hover:bg-primary-80 hover:cursor-pointer"
 						>
 							{t("btnLabel.openGoogleMaps")}
 						</Link>
@@ -152,28 +148,34 @@ export default async function Home({
 						data-aos-duration="500"
 					/>
 
-					<div className="relative w-full grid grid-cols-2 md:flex md:flex-row md:justify-between px-10 z-5">
+					<div className="relative w-full grid grid-cols-1 md:flex md:flex-row md:justify-between px-10 z-5">
 						{around[locale as "en" | "ua"].map(
 							({ title, distance, time }, idx) => {
-								const delays = [0, 200, 400, 600, 800];
+								const delays = [0, 200, 400, 600, 800, 1000];
+								const isEven = idx % 2 === 1;
 
 								return (
 									<div
 										key={idx}
-										className="flex flex-col gap-3 px-2 py-3"
+										className={clsx(
+											"flex md:flex-col gap-3 px-2 py-3",
+											isEven ? "flex-row-reverse" : ""
+										)}
 										data-aos="fade-up"
 										data-aos-duration="500"
 										data-aos-delay={delays[idx % delays.length]}
 									>
-										<p className="font-CodecPro300 text-sm md:text-base text-gray-0 leading-6">
-											{title}
-										</p>
-										<div className="flex gap-2">
-											<div className="bg-primary-70/40 py-1 px-2 md:px-3 md:py-2 font-CodecPro300 text-xs md:text-sm text-gray-0 leading-6">
-												{distance}
-											</div>
-											<div className="bg-primary-70/40 py-1 px-2 md:px-3 md:py-2 font-CodecPro300 text-xs md:text-sm text-gray-0 leading-6">
-												{time}
+										<div className="flex flex-col">
+											<p className="font-CodecPro300 text-sm md:text-base text-gray-0 leading-6">
+												{title}
+											</p>
+											<div className={clsx("flex gap-2 md:justify-normal", isEven ? "justify-end" : "justify-start")}>
+												<div className="bg-primary-70/40 py-1 px-2 md:px-3 md:py-2 font-CodecPro300 text-xs md:text-sm text-gray-0 leading-6">
+													{distance}
+												</div>
+												<div className="bg-primary-70/40 py-1 px-2 md:px-3 md:py-2 font-CodecPro300 text-xs md:text-sm text-gray-0 leading-6">
+													{time}
+												</div>
 											</div>
 										</div>
 									</div>
