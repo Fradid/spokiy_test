@@ -150,15 +150,15 @@ export default async function Home({
 					</h2>
 				</div>
 
-				<div className="flex flex-col md:flex-row gap-6">
+				<div className="flex flex-col md:flex-row gap-10">
 					<div className="flex flex-1 flex-col gap-6">
 						<Image src={developer} alt="developer" className="w-full" />
 
-						<div className="flex flex-col justify-center items-center bg-primary-100 p-10">
-							<p className="font-CodecPro font-normal text-xs text-gray-0 leading-5 md:text-base lg:leading-6">
+						<div className="flex flex-col justify-center items-center gap-3 bg-primary-100 p-6">
+							<p className="font-CodecPro font-normal text-sm text-gray-0 leading-5 md:text-xl lg:leading-6">
 								{t("home.developer.knowledge")}
 							</p>
-							<p className="font-CodecPro font-normal text-xs text-gray-0 leading-5 md:text-base lg:leading-6">
+							<p className="font-CodecPro font-normal text-sm text-gray-0 leading-5 md:text-xl lg:leading-6">
 								{t("home.developer.projects")}
 							</p>
 						</div>

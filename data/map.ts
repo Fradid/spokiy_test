@@ -47,7 +47,7 @@ export const mapLocations = {
 			id: 5,
 			title: "Island on the river Stryi",
 			icon: icon5,
-			line: lineRev,
+			line: line,
 			top: "top-[1312px] md:top-[826px] lg:top-[870px]",
 			left: "left-[178px] md:left-[274px] lg:left-[494px]",
 		},

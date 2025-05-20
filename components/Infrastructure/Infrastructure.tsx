@@ -59,13 +59,17 @@ const Infrastructure = ({ position, title, data }: InfrastructureProps) => {
 							data-aos-duration="500"
 							data-aos-delay={delay[index % delay.length]}
 						>
-							<Image
-								src={item.img}
-								alt={item.title}
-								className="object-cover md:w-1/2 lg:w-1/4 max-h-80"
-							/>{" "}
+							<div className="w-full md:w-[400px] h-[300px] flex-shrink-0 overflow-hidden">
+								<Image
+									src={item.img}
+									alt={item.title}
+									width={400}
+									height={300}
+									className="w-full h-full object-cover"
+								/>
+							</div>
 							{/**max-w-3xs sm:max-w-xs md:max-w-sm lg:max-w-3xl */}
-							<div className="flex flex-col justify-center items-center p-8 md:p-14 md:w-1/2 lg:w-4/5">
+							<div className="flex flex-col justify-center items-center gap-6 p-6 md:p-14 md:w-1/2 lg:w-4/5">
 								<h3 className="font-CodecPro500 text-base md:text-lg text-gray-100 uppercase">
 									{item.title}
 								</h3>
