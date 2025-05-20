@@ -10,6 +10,9 @@ import patternAcc from "@/public/assets/patterns/16.svg";
 import patternIcon from "@/public/assets/patterns/04.svg";
 import patternLogo from "@/public/assets/patterns/10.svg";
 import patternInf from "@/public/assets/patterns/08.svg";
+import patternDev from "@/public/assets/patterns/patterns.svg";
+import developer from "@/public/assets/developer.png";
+import logo from "@/public/assets/devSection.svg";
 import InfrastructureSection from "@/components/InfrastructureSection/InfrastructureSection";
 import Accordion from "@/components/Accordion/Accordion";
 import { advantages } from "@/data/advantages";
@@ -138,6 +141,68 @@ export default async function Home({
 				title={t("sections.infrastructure.title")}
 				img={patternInf}
 			/>
+
+			<section className="max-w-7xl mx-auto md:px-14 pb-14 pt-10 lg:pt-0 flex flex-col gap-6">
+				<div className="flex items-center gap-4">
+					<Image src={patternDev} alt="pattern" width={30} height={29} />
+					<h2 className="text-base leading-5 uppercase text-gray-100 font-CodecPro500 md:text-2xl lg:leading-6">
+						{t("home.developer.title")}
+					</h2>
+				</div>
+
+				<div className="flex flex-col md:flex-row gap-6">
+					<div className="flex flex-1 flex-col gap-6">
+						<Image src={developer} alt="developer" className="w-full" />
+
+						<div className="flex flex-col justify-center items-center bg-primary-100 p-10">
+							<p className="font-CodecPro font-normal text-xs text-gray-0 leading-5 md:text-base lg:leading-6">
+								{t("home.developer.knowledge")}
+							</p>
+							<p className="font-CodecPro font-normal text-xs text-gray-0 leading-5 md:text-base lg:leading-6">
+								{t("home.developer.projects")}
+							</p>
+						</div>
+					</div>
+
+					<div className="relative flex flex-1 flex-col justify-center gap-10 bg-primary-100 py-20 px-9">
+						<Image src={logo} alt="logo" className="absolute right-0 -top-14 md:-top-24 lg:-top-36 w-2/5 md:w-1/2" />
+
+						<div className="flex flex-col justify-center items-center gap-3">
+							<p className="text-base leading-5 uppercase text-gray-30 font-CodecPro500 md:text-2xl lg:leading-6">
+								{t("home.developer.name")}
+							</p>
+							<p className="text-sm leading-6 text-gray-30 font-CodecPro200 md:text-base">
+								{t("home.developer.position")}
+							</p>
+						</div>
+
+						<div className="flex flex-col gap-4">
+							<p className="text-sm leading-6 text-gray-30 font-CodecPro200 md:text-base">
+								{t("home.developer.experience")}
+							</p>
+							<p className="text-base leading-5 text-gray-30 font-CodecPro300 lg:text-xl lg:leading-6">
+								{t("home.developer.text1")}
+							</p>
+							<p className="text-base leading-5 text-gray-30 font-CodecPro300 lg:text-xl lg:leading-6">
+								{t("home.developer.text2")}
+							</p>
+						</div>
+
+						<div className="flex flex-col gap-2">
+							<p className="text-sm leading-6 text-gray-30 font-CodecPro200 md:text-base">
+								{t("home.developer.builded.title")}
+							</p>
+							<ul className="list-disc pl-6 gap-3 text-gray-30 text-sm md:text-base font-CodecPro200 grid grid-cols-2 lg:grid-cols-3">
+								{[...Array(8)].map((_, index) => (
+									<li key={index}>
+										{t(`home.developer.builded.item${index + 1}`)}
+									</li>
+								))}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<section id="advantages">
 				<div className="flex flex-col items-center pt-14 h-[700px] lg:h-[819px] bg-[url('/assets/treasures-bg.jpg')] bg-bottom bg-no-repeat bg-cover relative">

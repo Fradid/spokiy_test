@@ -16,7 +16,7 @@ const InfrastructureSection = ({ title, img, location = false }: SectionProps) =
 	return (
 		<section
 			id="infrastructure"
-			className={clsx("flex justify-center items-center", !location && "bg-[#f8f7f2]")}
+			className={clsx("flex justify-center items-center", !location && "bg-primary-20")}
 		>
 			<div className={clsx("flex flex-col items-start p-4 lg:py-14 max-w-6xl mx-auto", location ? "md:w-6xl w-full" : "lg:h-[845px]")}>
 				<div

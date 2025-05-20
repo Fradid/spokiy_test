@@ -60,7 +60,7 @@ export default async function Home({
 				img={pattern}
 			/>
 
-			<section className="relative w-full bg-[url('/assets/map.webp')] h-[1560px] md:h-[1236px] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center">
+			<section className="relative w-full bg-[url('/assets/map.webp')] h-[1560px] md:h-[1236px] bg-cover bg-no-repeat flex flex-col justify-center items-center">
 				<div className="absolute top-0 left-0 z-3 w-full h-[70%] bg-[linear-gradient(180deg,_#131313_0%,_rgba(19,_19,_19,_0)_100%)]" />
 
 				<div className="absolute top-0 right-0 z-2 w-1/2 h-full bg-[linear-gradient(270deg,_#131313_0%,_rgba(19,_19,_19,_0)_100%)]" />
@@ -68,10 +68,10 @@ export default async function Home({
 				<div className="absolute bottom-0 right-0 z-2 w-full h-[70%] opacity-80 bg-[linear-gradient(0deg,_#131313_0%,_rgba(19,_19,_19,_0)_100%)]" />
 
 				<div className="w-full max-w-7xl h-full relative flex flex-col items-start">
-					<div className="absolute w-full h-[706px] md:h-[1260px] lg:h-[1187px] bg-[url('/assets/map-lines.svg')] md:bg-[url('/assets/map-tablet.svg')] lg:bg-[url('/assets/map-desktop.svg')] bg-cover bg-center bg-no-repeat bottom-0 right-0" />
+					<div className="absolute w-full h-[706px] md:h-[1260px] lg:h-[1187px] bg-[url('/assets/map-lines.svg')] md:bg-[url('/assets/map-tablet.svg')] lg:bg-[url('/assets/map-desktop.svg')] bg-cover bg-center bg-no-repeat bottom-10 md:bottom-0 right-0" />
 
 					{mapLocations[locale as "en" | "ua"].map((point) => {
-						const isReversed = ![1, 7, 8].includes(point.id);
+						const isReversed = ![1, 5, 7, 8].includes(point.id);
 						const delays = [300, 100, 400, 500, 600, 700, 800, 100];
 
 						return (
@@ -85,9 +85,10 @@ export default async function Home({
 								data-aos-offset="0"
 							>
 								<div
-									className={`flex ${
+									className={clsx(
+										"flex",
 										isReversed ? "flex-col-reverse" : "flex-col"
-									}`}
+									)}
 								>
 									<div className="pl-5">
 										<Image src={point.line} alt="line" className="h-6" />
@@ -148,7 +149,7 @@ export default async function Home({
 						data-aos-duration="500"
 					/>
 
-					<div className="relative w-full grid grid-cols-1 md:flex md:flex-row md:justify-between px-10 z-5">
+					<div className="relative w-full grid grid-cols-1 md:flex md:flex-row md:justify-between px-10 md:px-0 lg:px-10 z-5">
 						{around[locale as "en" | "ua"].map(
 							({ title, distance, time }, idx) => {
 								const delays = [0, 200, 400, 600, 800, 1000];
@@ -158,18 +159,23 @@ export default async function Home({
 									<div
 										key={idx}
 										className={clsx(
-											"flex md:flex-col gap-3 px-2 py-3",
+											"flex flex-1 md:flex-col gap-3 px-2 py-3",
 											isEven ? "flex-row-reverse" : ""
 										)}
 										data-aos="fade-up"
 										data-aos-duration="500"
 										data-aos-delay={delays[idx % delays.length]}
 									>
-										<div className="flex flex-col">
+										<div className="h-full flex flex-col justify-between">
 											<p className="font-CodecPro300 text-sm md:text-base text-gray-0 leading-6">
 												{title}
 											</p>
-											<div className={clsx("flex gap-2 md:justify-normal", isEven ? "justify-end" : "justify-start")}>
+											<div
+												className={clsx(
+													"flex gap-2 md:justify-normal",
+													isEven ? "justify-end" : "justify-start"
+												)}
+											>
 												<div className="bg-primary-70/40 py-1 px-2 md:px-3 md:py-2 font-CodecPro300 text-xs md:text-sm text-gray-0 leading-6">
 													{distance}
 												</div>

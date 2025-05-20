@@ -20,6 +20,27 @@
 		"area": {
 			"title": "Total area",
 			"text": "3,35 hectares"
+		},
+		"developer": {
+			"title": "About the owner",
+			"knowledge": "10+ years of experience",
+			"projects": "7 successful projects",
+			"name": "Serhii Kovalov",
+			"position": "Project developer",
+			"experience": "Experience and expertise",
+			"text1": "Serhii Kovalov has over 10 years of experience successfully implementing development projects - from residential and commercial real estate to multifunctional complexes.",
+			"text2": "He has overseen processes at all stages of project realization - from land acquisition and concept development to project commissioning. He managed specialist teams and supervised the execution of work.",
+			"builded": {
+				"title": "Projects completed under his supervision include:",
+				"item1": "Avalon",
+				"item2": "Avalon Comfort",
+				"item3": "Avalon Garden",
+				"item4": "Avalon Light",
+				"item5": "Avalon Zelena",
+				"item6": "Avalon Holiday",
+				"item7": "Duck’s Lake",
+				"item8": "the Sodova shopping center."
+			}
 		}
 	},
 	"investment": {
