@@ -149,7 +149,7 @@ export default async function Home({
 						data-aos-duration="500"
 					/>
 
-					<div className="relative w-full grid grid-cols-1 md:flex md:flex-row md:justify-between px-10 md:px-0 lg:px-10 z-5">
+					<div className="relative w-full grid grid-cols-1 md:flex md:flex-row md:justify-between lg:px-6 z-5">
 						{around[locale as "en" | "ua"].map(
 							({ title, distance, time }, idx) => {
 								const delays = [0, 200, 400, 600, 800, 1000];
@@ -159,14 +159,14 @@ export default async function Home({
 									<div
 										key={idx}
 										className={clsx(
-											"flex flex-1 md:flex-col gap-3 px-2 py-3",
+											"flex flex-1 lg:flex-none md:flex-col gap-3 px-2 py-3",
 											isEven ? "flex-row-reverse" : ""
 										)}
 										data-aos="fade-up"
 										data-aos-duration="500"
 										data-aos-delay={delays[idx % delays.length]}
 									>
-										<div className="h-full flex flex-col justify-between">
+										<div className="h-full flex-1 flex flex-col justify-between gap-3">
 											<p className="font-CodecPro300 text-sm md:text-base text-gray-0 leading-6">
 												{title}
 											</p>
