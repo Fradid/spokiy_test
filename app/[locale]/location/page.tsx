@@ -93,7 +93,7 @@ export default async function Home({
 									<div className="pl-5">
 										<Image src={point.line} alt="line" className="h-6" />
 									</div>
-									<div className="flex justify-center items-center gap-2">
+									<div className="flex justify-center items-center gap-2 pl-2.5 md:pl-0">
 										<Image
 											src={point.icon}
 											alt="icon"
@@ -166,7 +166,12 @@ export default async function Home({
 										data-aos-duration="500"
 										data-aos-delay={delays[idx % delays.length]}
 									>
-										<div className="h-full flex-1 flex flex-col justify-between gap-3">
+										<div
+											className={clsx(
+												"h-full flex-1 flex flex-col justify-between gap-3",
+												isEven ? "items-end" : "items-start"
+											)}
+										>
 											<p className="font-CodecPro300 text-sm md:text-base text-gray-0 leading-6">
 												{title}
 											</p>

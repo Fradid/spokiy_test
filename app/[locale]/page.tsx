@@ -142,7 +142,7 @@ export default async function Home({
 				img={patternInf}
 			/>
 
-			<section className="max-w-7xl mx-auto md:px-14 pb-14 pt-10 lg:pt-0 flex flex-col gap-6">
+			<section className="max-w-7xl mx-auto px-4 md:px-14 pb-14 pt-10 lg:pt-0 flex flex-col gap-6">
 				<div
 					className="flex items-center gap-4"
 					data-aos="fade-down-right"
