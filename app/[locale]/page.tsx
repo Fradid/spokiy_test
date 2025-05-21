@@ -143,7 +143,11 @@ export default async function Home({
 			/>
 
 			<section className="max-w-7xl mx-auto md:px-14 pb-14 pt-10 lg:pt-0 flex flex-col gap-6">
-				<div className="flex items-center gap-4">
+				<div
+					className="flex items-center gap-4"
+					data-aos="fade-down-right"
+					data-aos-duration="500"
+				>
 					<Image src={patternDev} alt="pattern" width={30} height={29} />
 					<h2 className="text-base leading-5 uppercase text-gray-100 font-CodecPro500 md:text-2xl lg:leading-6">
 						{t("home.developer.title")}
@@ -151,23 +155,30 @@ export default async function Home({
 				</div>
 
 				<div className="flex flex-col md:flex-row gap-10">
-					<div className="flex flex-1 flex-col gap-6">
-						<Image src={developer} alt="developer" className="w-full" />
-
-						<div className="flex flex-col justify-center items-center gap-3 bg-primary-100 p-6">
-							<p className="font-CodecPro font-normal text-sm text-gray-0 leading-5 md:text-xl lg:leading-6">
-								{t("home.developer.knowledge")}
-							</p>
-							<p className="font-CodecPro font-normal text-sm text-gray-0 leading-5 md:text-xl lg:leading-6">
-								{t("home.developer.projects")}
-							</p>
-						</div>
+					<div
+						className="flex flex-1 flex-col gap-6"
+						data-aos="fade-right"
+						data-aos-duration="500"
+					>
+						<Image src={developer} alt="developer" className="w-full h-auto lg:h-full" />
 					</div>
 
 					<div className="relative flex flex-1 flex-col justify-center gap-10 bg-primary-100 py-20 px-9">
-						<Image src={logo} alt="logo" className="absolute right-0 -top-14 md:-top-24 lg:-top-36 w-2/5 md:w-1/2" />
+						<Image
+							src={logo}
+							alt="logo"
+							className="absolute right-0 -top-14 md:-top-24 lg:-top-24 w-2/5"
+							data-aos="fade-up"
+							data-aos-duration="500"
+							data-aos-delay="300"
+						/>
 
-						<div className="flex flex-col justify-center items-center gap-3">
+						<div
+							className="flex flex-col justify-center items-center gap-3"
+							data-aos="fade-up"
+							data-aos-duration="500"
+							data-aos-delay="500"
+						>
 							<p className="text-base leading-5 uppercase text-gray-30 font-CodecPro500 md:text-2xl lg:leading-6">
 								{t("home.developer.name")}
 							</p>
@@ -176,7 +187,12 @@ export default async function Home({
 							</p>
 						</div>
 
-						<div className="flex flex-col gap-4">
+						<div
+							className="flex flex-col gap-4"
+							data-aos="fade-up"
+							data-aos-duration="500"
+							data-aos-delay="700"
+						>
 							<p className="text-sm leading-6 text-gray-30 font-CodecPro200 md:text-base">
 								{t("home.developer.experience")}
 							</p>
@@ -188,7 +204,12 @@ export default async function Home({
 							</p>
 						</div>
 
-						<div className="flex flex-col gap-2">
+						<div
+							className="flex flex-col gap-2"
+							data-aos="fade-up"
+							data-aos-duration="500"
+							data-aos-delay="900"
+						>
 							<p className="text-sm leading-6 text-gray-30 font-CodecPro200 md:text-base">
 								{t("home.developer.builded.title")}
 							</p>
