@@ -169,7 +169,7 @@ export default async function Home({
 										<div
 											className={clsx(
 												"h-full flex-1 flex flex-col justify-between gap-3",
-												isEven ? "items-end" : "items-start"
+												isEven && "items-end md:items-start"
 											)}
 										>
 											<p className="font-CodecPro300 text-sm md:text-base text-gray-0 leading-6">

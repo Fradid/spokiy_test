@@ -14,7 +14,7 @@ export const cottages = {
 			description:
 				"A Spacious two-level cottage with two comfortable bedrooms and a large living room. An ideal choice for a big family or a company that appreciates cosiness and impeccable comfort in every detail.",
 			area: "60",
-			price: "199 101 $",
+			price: "209 517 $",
 			count: "8",
 		},
 		{
@@ -25,7 +25,7 @@ export const cottages = {
 			description:
 				"An attractive cottage elevated on stilts, seeming to float above the ground and offering breathtaking panoramic views. A cozy living room with a fireplace and panoramic windows floods the space with natural light, bringing a sense of comfort and tranquility. Ideal for those seeking to enjoy the beauty of nature.",
 			area: "52",
-			price: "176 530 $",
+			price: "185 765 $",
 			count: "5",
 		},
 		{
@@ -36,7 +36,7 @@ export const cottages = {
 			description:
 				"A cozy two-level cottage, part of a duplex with a private entrance. This is a space for a comfortable stay, thought out to the smallest detail. The cottage is perfect for a couple or a family, guaranteeing everyone comfort and convenience during their stay.",
 			area: "53",
-			price: "130 924 $",
+			price: "137 773 $",
 			count: "4",
 		},
 		{
@@ -47,7 +47,7 @@ export const cottages = {
 			description:
 				"A cozy two-level cottage, part of a duplex with a private entrance. This is a space for a comfortable stay, thought out to the smallest detail. The cottage is perfect for a couple or a family, guaranteeing everyone comfort and convenience during their stay.",
 			area: "53",
-			price: "130 924 $",
+			price: "137 773 $",
 			count: "4",
 		},
 		{
@@ -58,7 +58,7 @@ export const cottages = {
 			description:
 				"A cottage with an atmosphere of cosiness and harmony. The space is filled with light thanks to the large panoramic windows that offer stunning views of nature, and the fireplace and soft furniture perfectly complement the interior for a pleasant stay. It is perfect for those who are looking for an escape from the city noise and dream of a weekend surrounded by nature.",
 			area: "52",
-			price: "153 802 $",
+			price: "161 848 $",
 			count: "9",
 		},
 		{
@@ -69,7 +69,7 @@ export const cottages = {
 			description:
 				"A single-level cottage with the layout of a cozy apartment. A separate bedroom, a living room with a large, comfortable sofa, and a bar counter for evening gatherings—here, you’ll feel right at home. Perfect for couples or a secluded retreat.",
 			area: "44",
-			price: "108 118 $",
+			price: "113 775 $",
 			count: "3",
 		},
 	],
@@ -82,7 +82,7 @@ export const cottages = {
 			description:
 				"Просторий дворівневий котедж з двома комфортними спальнями та просторою вітальнею. Ідеальний вибір для великої родини чи компанії, що цінує затишок і бездоганний комфорт у кожній деталі.",
 			area: "60",
-			price: "199 101 $",
+			price: "209 517 $",
 			count: "8",
 		},
 		{
@@ -93,7 +93,7 @@ export const cottages = {
 			description:
 				"Привабливий котедж, піднятий на опорах, ніби парить над землею, даруючи чудові панорамні краєвиди. Затишна вітальня з каміном та з панорамними вікнами, крізь які всередину проникає багато природного світла, дарує відчуття комфорту та спокою. Ідеальний вибір для тих, хто прагне насолоджуватися затишком і красою природи.",
 			area: "52",
-			price: "176 530 $",
+			price: "185 765 $",
 			count: "5",
 		},
 		{
@@ -104,7 +104,7 @@ export const cottages = {
 			description:
 				"Затишний дворівневий котедж, що є частиною дуплекса з окремим входом. Це продуманий до дрібниць простір для зручного відпочинку. Котедж відмінно підійде для пари чи сім’ї, гарантуючи кожному затишок та зручність під час перебування у ньому.",
 			area: "53",
-			price: "130 924 $",
+			price: "137 773 $",
 			count: "4",
 		},
 		{
@@ -115,7 +115,7 @@ export const cottages = {
 			description:
 				"Затишний дворівневий котедж, що є частиною дуплекса з окремим входом. Це продуманий до дрібниць простір для зручного відпочинку. Котедж відмінно підійде для пари чи сім’ї, гарантуючи кожному затишок та зручність під час перебування у ньому.",
 			area: "53",
-			price: "130 924 $",
+			price: "137 773 $",
 			count: "4",
 		},
 		{
@@ -126,7 +126,7 @@ export const cottages = {
 			description:
 				"Котедж у якому панує атмосфера затишку та гармонії. Простір наповнюється світлом завдяки великим панорамним вікнам, які відкривають захопливі краєвиди природи, а камін і м’які меблі ідеально доповнюють інтер’єр для приємного відпочинку. Він чудово підійде для тих, хто шукає втечу від міського шуму, мріє про спокійні вихідні в оточенні природи.",
 			area: "52",
-			price: "153 802 $",
+			price: "161 848 $",
 			count: "9",
 		},
 		{
@@ -137,7 +137,7 @@ export const cottages = {
 			description:
 				"Однорівневий котедж з плануванням затишної квартири. Окрема спальня, вітальня з великим та зручним диваном, барна стійка, для вечірніх посиденьок - тут ви почуватиметесь, як вдома. Підійде для пари чи усамітненого відпочинку. ",
 			area: "44",
-			price: "108 118 $",
+			price: "113 775 $",
 			count: "3",
 		},
 	],
@@ -149,10 +149,10 @@ export const calculator = [
 		details: {
 			cottages: 8,
 			area: 60,
-			price: 199101,
-			price30: 211545,
-			price50: 207397,
-			price70: 203249,
+			price: 209517,
+			price30: 213882,
+			price50: 218247,
+			price70: 222612,
 			rent: 200,
 			fee_pct: 40,
 		},
@@ -162,10 +162,10 @@ export const calculator = [
 		details: {
 			cottages: 5,
 			area: 50,
-			price: 176530,
-			price30: 187564,
-			price50: 183886,
-			price70: 180208,
+			price: 185765,
+			price30: 189636,
+			price50: 193506,
+			price70: 197376,
 			rent: 180,
 			fee_pct: 40,
 		},
@@ -175,10 +175,10 @@ export const calculator = [
 		details: {
 			cottages: 4,
 			area: 53,
-			price: 130924,
-			price30: 139107,
-			price50: 136379,
-			price70: 133652,
+			price: 137773,
+			price30: 140643,
+			price50: 143514,
+			price70: 146384,
 			rent: 135,
 			fee_pct: 40,
 		},
@@ -188,10 +188,10 @@ export const calculator = [
 		details: {
 			cottages: 4,
 			area: 53,
-			price: 130924,
-			price30: 139107,
-			price50: 136379,
-			price70: 133652,
+			price: 137773,
+			price30: 140643,
+			price50: 143514,
+			price70: 146384,
 			rent: 135,
 			fee_pct: 40,
 		},
@@ -201,10 +201,10 @@ export const calculator = [
 		details: {
 			cottages: 10,
 			area: 52,
-			price: 153802,
-			price30: 163415,
-			price50: 160211,
-			price70: 157007,
+			price: 161848,
+			price30: 165220,
+			price50: 168592,
+			price70: 171964,
 			rent: 155,
 			fee_pct: 40,
 		},
@@ -214,10 +214,10 @@ export const calculator = [
 		details: {
 			cottages: 5,
 			area: 44,
-			price: 108118,
-			price30: 114876,
-			price50: 112624,
-			price70: 110371,
+			price: 113775,
+			price30: 116145,
+			price50: 118515,
+			price70: 120886,
 			rent: 110,
 			fee_pct: 40,
 		},

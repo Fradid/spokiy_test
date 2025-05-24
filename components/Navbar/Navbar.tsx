@@ -15,12 +15,12 @@ import closeIcon from "@/public/assets/icons/x.svg";
 import { useModal } from "@/context/ModalContext";
 
 const cottagePrices: Record<string, string> = {
-	podyh: "199 101 $",
-	nebo: "176 530 $",
-	"solar3-1": "130 924 $",
-	"solar3-2": "130 924 $",
-	svitanok: "153 802 $",
-	dyvo: "108 118 $",
+	podyh: "209 517 $",
+	nebo: "185 765 $",
+	"solar3-1": "137 773 $",
+	"solar3-2": "137 773 $",
+	svitanok: "161 848 $",
+	dyvo: "113 775 $",
 	showAll: "",
 };
 

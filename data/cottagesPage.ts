@@ -49,7 +49,7 @@ export const cottages = {
 		getData: (t: any) => ({
 			cottageName: t("cottages.podyh"),
 			area: `60 ${t("sections.cottages.mLabel")}²`,
-			price: "199 101 $",
+			price: "209 517 $",
 			paybackCount: `9 ${t("sections.quality.years")}`,
 			bgUrl: `/assets/images/podyh.webp`,
 			rooms: [
@@ -72,7 +72,7 @@ export const cottages = {
 		getData: (t: any) => ({
 			cottageName: t("cottages.nebo"),
 			area: `52 ${t("sections.cottages.mLabel")}²`,
-			price: "176 530 $",
+			price: "185 765 $",
 			paybackCount: `9 ${t("sections.quality.years")}`,
 			bgUrl: `/assets/images/nebo.png`,
 			rooms: [
@@ -94,7 +94,7 @@ export const cottages = {
 		getData: (t: any) => ({
 			cottageName: t("cottages.solar3-1"),
 			area: `53 ${t("sections.cottages.mLabel")}²`,
-			price: "130 924 $",
+			price: "137 773 $",
 			paybackCount: `9 ${t("sections.quality.years")}`,
 			bgUrl: `/assets/images/solar.png`,
 			rooms: [
@@ -116,7 +116,7 @@ export const cottages = {
 		getData: (t: any) => ({
 			cottageName: t("cottages.solar3-2"),
 			area: `53 ${t("sections.cottages.mLabel")}²`,
-			price: "130 924 $",
+			price: "137 773 $",
 			paybackCount: `9 ${t("sections.quality.years")}`,
 			bgUrl: `/assets/images/solar.png`,
 			rooms: [
@@ -138,7 +138,7 @@ export const cottages = {
 		getData: (t: any) => ({
 			cottageName: t("cottages.svitanok"),
 			area: `52 ${t("sections.cottages.mLabel")}²`,
-			price: "153 802 $",
+			price: "161 848 $",
 			paybackCount: `9 ${t("sections.quality.years")}`,
 			bgUrl: `/assets/images/svitanok.png`,
 			rooms: [
@@ -160,7 +160,7 @@ export const cottages = {
 		getData: (t: any) => ({
 			cottageName: t("cottages.dyvo"),
 			area: `44 ${t("sections.cottages.mLabel")}²`,
-			price: "108 118 $",
+			price: "113 775 $",
 			paybackCount: `9 ${t("sections.quality.years")}`,
 			bgUrl: `/assets/images/dyvo.png`,
 			rooms: [
@@ -181,10 +181,10 @@ export const cottagesTableData = [
     name: "PODYH",
     details: {
       area: '60 м²',
-      firstDeposit: '$ 211, 545',
-      secondDeposit: '$ 207, 397',
-      thirdDeposit: '$ 203, 249',
-      fourthDeposit: '$ 199, 101',
+      firstDeposit: '$ 222, 612',
+      secondDeposit: '$ 218, 247',
+      thirdDeposit: '$ 213, 882',
+      fourthDeposit: '$ 209, 517',
       rent: '$ 200',
       payback_yrs: 9,
       profit: '$ 26, 280',
@@ -196,10 +196,10 @@ export const cottagesTableData = [
     name: "NEBO",
     details: {
       area: '52 м²',
-      firstDeposit: '$ 187, 564',
-      secondDeposit: '$ 183, 886',
-      thirdDeposit: '$ 180, 208',
-      fourthDeposit: '$ 176, 530',
+      firstDeposit: '$ 197, 376',
+      secondDeposit: '$ 193, 506',
+      thirdDeposit: '$ 189, 636',
+      fourthDeposit: '$ 185, 765',
       rent: '$ 180',
       payback_yrs: 9,
       profit: '$ 23, 652',
@@ -211,10 +211,10 @@ export const cottagesTableData = [
     name: "SOLAR 1",
     details: {
       area: '53 м²',
-      firstDeposit: '$ 139, 107',
-      secondDeposit: '$ 136, 379',
-      thirdDeposit: '$ 133, 652',
-      fourthDeposit: '$ 130, 924',
+      firstDeposit: '$ 146, 384',
+      secondDeposit: '$ 143, 514',
+      thirdDeposit: '$ 140, 643',
+      fourthDeposit: '$ 137, 773',
       rent: '$ 135',
       payback_yrs: 9,
       profit: '$ 17, 739',
@@ -226,10 +226,10 @@ export const cottagesTableData = [
     name: "SOLAR 2",
     details: {
       area: '53 м²',
-      firstDeposit: '$ 139, 107',
-      secondDeposit: '$ 136, 379',
-      thirdDeposit: '$ 133, 652',
-      fourthDeposit: '$ 130, 924',
+      firstDeposit: '$ 146, 384',
+      secondDeposit: '$ 143, 514',
+      thirdDeposit: '$ 140, 643',
+      fourthDeposit: '$ 137, 773',
       rent: '$ 135',
       payback_yrs: 9,
       profit: '$ 17, 739',
@@ -241,10 +241,10 @@ export const cottagesTableData = [
     name: "SVITANOK",
     details: {
       area: '52 м²',
-      firstDeposit: '$ 163, 415',
-      secondDeposit: '$ 160, 211',
-      thirdDeposit: '$ 157, 007',
-      fourthDeposit: '$ 153, 802',
+      firstDeposit: '$ 171, 964',
+      secondDeposit: '$ 168, 592',
+      thirdDeposit: '$ 165, 220',
+      fourthDeposit: '$ 161, 848',
       rent: '$ 155',
       payback_yrs: 9,
       profit: '$ 20, 367',
@@ -256,10 +256,10 @@ export const cottagesTableData = [
     name: "DYVO",
     details: {
       area: '44 м²',
-      firstDeposit: '$ 114, 876',
-      secondDeposit: '$ 112, 624',
-      thirdDeposit: '$ 110, 371',
-      fourthDeposit: '$ 108, 118',
+      firstDeposit: '$ 120, 886',
+      secondDeposit: '$ 118, 515',
+      thirdDeposit: '$ 116, 145',
+      fourthDeposit: '$ 113, 775',
       rent: '$ 110',
       payback_yrs: 9,
       profit: '$ 14, 454',
