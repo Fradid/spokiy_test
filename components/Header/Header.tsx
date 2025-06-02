@@ -19,7 +19,7 @@ const Header = () => {
 	};
 
 	return (
-		<header className="fixed top-0 w-full h-[62px] z-50 flex justify-between items-center p-4 bg-primary-20 border-b border-[#e5e7eb] lg:px-14">
+		<header className="fixed top-0 w-full h-[62px] z-50 flex justify-between items-center p-4 bg-primary-20 border-b border-[#e5e7eb] lg:px-10">
 			<Link href="/" aria-label="Homepage">
 				<Image src={logo} alt="Lehit Logo" />
 			</Link>

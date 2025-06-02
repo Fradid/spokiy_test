@@ -134,7 +134,7 @@ const Navbar = () => {
 		<nav className="relative font-CodecPro200">
 			{/* Desktop Navbar */}
 			<div className="hidden lg:flex items-center gap-1.5 text-lg">
-				<ul className="flex flex-wrap items-center gap-1.5">
+				<ul className="flex items-center gap-1.5">
 					{menuItems.map(({ name, href, isButton, icon, dropdownKey }, idx) => (
 						<li
 							key={idx}
