@@ -11,7 +11,7 @@ import patternIcon from "@/public/assets/patterns/04.svg";
 import patternLogo from "@/public/assets/patterns/10.svg";
 import patternInf from "@/public/assets/patterns/08.svg";
 import patternDev from "@/public/assets/patterns/patterns.svg";
-import developer from "@/public/assets/developer.png";
+import developer from "@/public/assets/developer.jpg";
 import logo from "@/public/assets/devSection.svg";
 import InfrastructureSection from "@/components/InfrastructureSection/InfrastructureSection";
 import Accordion from "@/components/Accordion/Accordion";
@@ -154,13 +154,13 @@ export default async function Home({
 					</h2>
 				</div>
 
-				<div className="flex flex-col md:flex-row gap-10">
+				<div className="flex flex-col lg:flex-row gap-10">
 					<div
 						className="flex flex-1 flex-col gap-6"
 						data-aos="fade-right"
 						data-aos-duration="500"
 					>
-						<Image src={developer} alt="developer" className="w-full h-auto lg:h-full" />
+						<Image src={developer} alt="developer" className="w-full h-auto lg:object-cover lg:h-full" />
 					</div>
 
 					<div className="relative flex flex-1 flex-col justify-center gap-10 bg-primary-100 py-20 px-9">
