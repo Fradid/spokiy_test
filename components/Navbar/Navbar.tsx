@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -34,7 +34,12 @@ const cottagesSections = [
 	"showAll",
 ];
 
-const Navbar = () => {
+interface NavBarProps {
+	isMobileMenuOpen: boolean;
+	setIsMobileMenuOpen: Dispatch<SetStateAction<boolean>>;
+}
+
+const Navbar = ({ isMobileMenuOpen, setIsMobileMenuOpen }: NavBarProps) => {
 	const t = useTranslations("navbar");
 	const ct = useTranslations("cottages");
 	const { toggle } = useModal();
@@ -57,7 +62,7 @@ const Navbar = () => {
 		},
 	];
 
-	const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+	// const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 	const [expandedSection, setExpandedSection] = useState<string | null>(null);
 
 	const menuItems = [
@@ -113,7 +118,7 @@ const Navbar = () => {
 							? "/cottages"
 							: `/cottages/${key.replace("-", ".")}`
 					}
-					onClick={() => setMobileMenuOpen(false)}
+					onClick={() => setIsMobileMenuOpen(false)}
 				>
 					<div className="flex flex-col gap-1">
 						<p className="font-CodecPro300 leading-6 text-gray-100">
@@ -177,7 +182,7 @@ const Navbar = () => {
 
 			{/* Mobile Navbar Toggle */}
 			<div className="flex items-center justify-between lg:hidden">
-				<button onClick={() => setMobileMenuOpen((prev) => !prev)}>
+				<button onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
 					<Image
 						src={isMobileMenuOpen ? closeIcon : burgerMenuIcon}
 						alt="menu"
@@ -229,7 +234,7 @@ const Navbar = () => {
 																? "/cottages"
 																: `/cottages/${key.replace("-", ".")}`
 														}
-														onClick={() => setMobileMenuOpen(false)}
+														onClick={() => setIsMobileMenuOpen(false)}
 														className="flex justify-between"
 													>
 														<p className="font-CodecPro300 leading-6 text-gray-100">
@@ -249,21 +254,18 @@ const Navbar = () => {
 
 								<Link
 									href="/investment"
-									onClick={() => setMobileMenuOpen(false)}
+									onClick={() => setIsMobileMenuOpen(false)}
 								>
 									{t("investment")}
 								</Link>
 
-								<Link
-									href="/location"
-									onClick={() => setMobileMenuOpen(false)}
-								>
+								<Link href="/location" onClick={() => setIsMobileMenuOpen(false)}>
 									{t("locations")}
 								</Link>
 
 								<Link
 									href="/infrastructure"
-									onClick={() => setMobileMenuOpen(false)}
+									onClick={() => setIsMobileMenuOpen(false)}
 								>
 									{t("infrastructure")}
 								</Link>
@@ -272,7 +274,7 @@ const Navbar = () => {
 									className="flex items-center gap-2 cursor-pointer"
 									onClick={() => {
 										toggle("presentation");
-										setMobileMenuOpen(false);
+										setIsMobileMenuOpen(false);
 									}}
 								>
 									{t("presentation")}

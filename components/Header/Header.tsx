@@ -5,10 +5,12 @@ import logo from "@/public/assets/logo.svg";
 import { Link, usePathname } from "@/i18n/navigation";
 import Navbar from "../Navbar/Navbar";
 import { useLocale } from "next-intl";
+import { useState } from "react";
 
 const Header = () => {
 	const pathname = usePathname();
 	const locale = useLocale();
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	// Generate language button classes
 	const getLangButtonClasses = (lang: string) => {
@@ -20,12 +22,16 @@ const Header = () => {
 
 	return (
 		<header className="fixed top-0 w-full h-[62px] z-50 flex justify-between items-center p-4 bg-primary-20 border-b border-[#e5e7eb] lg:px-10">
-			<Link href="/" aria-label="Homepage">
+			<Link
+				href="/"
+				aria-label="Homepage"
+				onClick={() => setIsMobileMenuOpen(false)}
+			>
 				<Image src={logo} alt="Lehit Logo" />
 			</Link>
 
 			<div className="flex flex-row-reverse items-center gap-6 lg:flex-row">
-				<Navbar />
+				<Navbar isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
 				<div className="flex gap-3 text-lg font-CodecPro200 text-gray-70 leading-[18px]">
 					{["ua", "en"].map((lang) => (
 						<Link

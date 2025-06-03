@@ -160,7 +160,11 @@ export default async function Home({
 						data-aos="fade-right"
 						data-aos-duration="500"
 					>
-						<Image src={developer} alt="developer" className="w-full h-auto lg:object-cover lg:h-full" />
+						<Image
+							src={developer}
+							alt="developer"
+							className="w-full h-auto lg:object-cover lg:h-full"
+						/>
 					</div>
 
 					<div className="relative flex flex-1 flex-col justify-center gap-10 bg-primary-100 py-20 px-9">
@@ -213,9 +217,9 @@ export default async function Home({
 							<p className="text-sm leading-6 text-gray-30 font-CodecPro200 md:text-base">
 								{t("home.developer.builded.title")}
 							</p>
-							<ul className="list-disc pl-6 gap-3 text-gray-30 text-sm md:text-base font-CodecPro200 grid grid-cols-2 lg:grid-cols-3">
+							<ul className="list-disc pl-6 text-gray-30 text-sm md:text-base font-CodecPro200 columns-2 lg:columns-3 [column-gap:2rem]">
 								{[...Array(8)].map((_, index) => (
-									<li key={index}>
+									<li key={index} className="mb-2">
 										{t(`home.developer.builded.item${index + 1}`)}
 									</li>
 								))}
@@ -228,7 +232,7 @@ export default async function Home({
 			<section id="advantages">
 				<div className="flex flex-col items-center pt-14 h-[700px] lg:h-[819px] bg-[url('/assets/treasures-bg.jpg')] bg-bottom bg-no-repeat bg-cover relative">
 					<div
-						className="absolute lg:w-6xl"
+						className="absolute lg:max-w-6xl lg:w-full"
 						data-aos="fade-up-right"
 						data-aos-delay="300"
 					>
