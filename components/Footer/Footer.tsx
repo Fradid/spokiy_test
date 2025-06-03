@@ -92,7 +92,7 @@ const Footer = () => {
 	return (
 		<footer className="bg-gray-100 text-white">
 			<div className="flex flex-col md:flex-row gap-12 justify-between px-5 md:px-20 py-14">
-				<div className="flex flex-col max-w-md mx-auto px-4 sm:px-0">
+				<div className="flex flex-col max-w-md mx-auto px-4 md:px-0">
 					<Image src={pattern} alt="pattern" className="mb-8" />
 					<h2 className="text-2xl uppercase font-CodecPro500 leading-6 mb-2.5">
 						{t("title")}
