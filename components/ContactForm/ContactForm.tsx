@@ -6,6 +6,8 @@ import "react-phone-number-input/style.css";
 import axios from "axios";
 import { useTranslations } from "next-intl";
 import clsx from "clsx";
+import sha256 from "crypto-js/sha256";
+import encHex from "crypto-js/enc-hex";
 
 interface ContactFormProps {
 	onSuccess?: () => void;
@@ -69,6 +71,32 @@ const ContactForm = ({
 
 		try {
 			const formData = new FormData();
+
+			const eventId = `lead-${Date.now()}`;
+
+			const rawPhone = form.phone.replace(/\D/g, "");
+			const rawName = form.name.trim().toLowerCase();
+
+			const hashedPhone = sha256(rawPhone).toString(encHex);
+			const hashedName = sha256(rawName).toString(encHex);
+
+			const payload = {
+				data: [
+					{
+						event_name: "Lead",
+						event_time: Math.floor(Date.now() / 1000),
+						action_source: "website",
+						event_source_url: "https://lehit-village.com/",
+						event_id: eventId,
+						user_data: {
+							fn: [hashedName],
+							ph: [hashedPhone],
+						},
+						custom_data: { value: 1, currency: "UAH" },
+					},
+				],
+			};
+
 			formData.append("name", form.name);
 			formData.append("phone", form.phone || "");
 			if (form.telegram) formData.append("telegram", form.telegram);
@@ -76,15 +104,35 @@ const ContactForm = ({
 			formData.append("partner_id", "19339");
 			formData.append("action", "partner-custom-form");
 
+			// @ts-expect-error: fbq is a global function not recognized by TypeScript
+			if (typeof window !== "undefined" && typeof window.fbq === "function") {
+				// @ts-expect-error: fbq is a global function not recognized by TypeScript
+				window.fbq("track", "Lead", {
+					value: 1,
+					currency: "UAH",
+					eventID: eventId,
+				});
+			}
+			const face = await fetch(
+				`https://graph.facebook.com/v22.0/${process.env.NEXT_PUBLIC_ID}/events?access_token=${process.env.NEXT_PUBLIC_FACEBOOK_TOKEN}`,
+				{
+					method: "POST",
+					headers: { "Content-Type": "application/json" },
+					body: JSON.stringify(payload),
+				}
+			);
+
 			const res = await axios.post(
 				"https://crm.g-plus.app/api/actions",
 				formData
 			);
+
 			if (res.data.success) {
 				setSent(true);
 				onSuccess?.();
 			} else {
 				setErrors((prev) => ({ ...prev, phone: t("errors.smthingWrong") }));
+				console.error("Error sending form:", face.status);
 			}
 		} catch (error) {
 			if (axios.isAxiosError(error)) {
